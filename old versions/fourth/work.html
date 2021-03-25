@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>ILLYA | Programmer</title>
+
+	<link rel="stylesheet" href="css/indexstyle.css">
+
+	<link rel="stylesheet" href="css/fonts/fonts.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<a href="https://illuhakupchenko.github.io" id="logoa"><button id="logo"><span></span><span></span><span></span><span></span></button></a>
+		<div id="menu">
+			<ul>
+				<li><a href="about.html">about</a></li>
+				<li><a href="work.html">portfolio</a></li>
+				<li><a href="contacts.html">contact</a></li>
+			</ul>
+		</div>
+		
+		<div id="bl_text">
+			<p id="hello_txt">Hi there</p>
+			<p id="name_txt">My name is <strong><em><span>ILLYA</span></em></strong></p>
+			<img src="img/me_main.png" alt="me" id="me_main">
+			<img src="img/Me-on-armchair.png" alt="me" id="me_main_colored" onmouseover="clearInts();"onmouseout="startAnim();"> 
+			<p id="dvlpr_txt"><span>I</span> <span>am</span> <span>a</span> <span>software</span> <span>developer</span></p>
+			<a href="#" id="downld_CV">download CV</a>
+		</div>
+		
+		<div id="recent-work">
+			<span></span>
+			<button id="btn_recent-work">recent work</button>
+		</div>
+	</div>
+	
+	<script>
+
+		photo = document.getElementById('me_main_colored');
+		dark_photo = document.getElementById('me_main');
+
+		var height_dark_photo = photo.clientHeight;
+
+		var timer = null, timer1 = null, timer2 = null;
+		mouseover = false;
+		
+		setTimeout(() => {
+			if(timer==undefined && timer1==undefined && timer2==undefined){
+				changeOpacity("colored");
+				
+			}
+		}, 2000);
+		
+		function changeOpacity(color) {
+			var n;
+			if(color == "colored"){
+				n = 0;
+			}
+			else {
+				n = 1;
+			}
+			if(!mouseover){
+				timer = setInterval(function() {
+					if (color == "colored"){
+						n += 0.1;
+						if (n >= 1) {
+							clearInterval(timer);
+							setTimeout(changeImgs, 5000);
+						}
+						else {
+							photo.style.opacity = n;
+						}	
+					}
+					else {
+						n -= 0.1;
+						if (n <= 0) {
+							clearInterval(timer);
+							setTimeout(changeOpacity, 10000, "colored");
+						}
+						else {
+							photo.style.opacity = n;
+						}	
+					}
+				}, 100);		
+			}
+		}
+
+		
+		function changeImgs() {
+			var n = 0;
+			if(!mouseover){
+				timer1 = setInterval(function() {
+					
+					n++;
+					if (n >= 10) {
+						clearInterval(timer1);
+						setTimeout(changeOpacity,5000, "dark");
+						photo.src='img/Me-on-armchair.png';	
+					}
+					else {
+						photo.src='img/mainpage_anim_images/Me-on-armchair' + n +'.png';	
+					}	
+				
+				}, 100);
+			}	
+		}
+
+		timer3 = setInterval(function(){
+			console.log("Mouse: + " + mouseover + "Timer: " + timer + " Timer1: " + timer1 + " Timer2: " + timer2);
+		}, 1000);
+
+		function clearInts(){
+			mouseover = true;
+		
+			max_id = setTimeout(function () {});
+			while (max_id--) {
+				clearTimeout(max_id);
+			}
+		
+			photo.src='img/Me-on-armchair.png';	
+			photo.style.opacity = 1;
+			photo.style.height = height_dark_photo + 50 + 'px';
+			dark_photo.style.height = height_dark_photo + 50 + 'px';
+		}
+
+		function startAnim() {
+			mouseover = false;
+			max_id = setTimeout(function () {});
+			while (max_id--) {
+				clearTimeout(max_id);
+			}
+	
+			photo.style.height = height_dark_photo + 'px';
+			dark_photo.style.height = height_dark_photo + 'px';
+			changeOpacity("dark");
+		}
+	</script>
+</body>
+</html>

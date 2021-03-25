@@ -1,0 +1,2332 @@
+#block, .textab, .imgbl {
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+#prel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#toppanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 51%;
+    background-color: #000;
+    z-index: 100;
+    opacity: 1;
+    -webkit-animation: 1s linear 0s normal panelsout;
+            animation: 1s linear 0s normal panelsout;
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+
+#bottompanel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 51%;
+    background-color: #000;
+    z-index: 100;
+    opacity: 1;
+    -webkit-animation: 1s linear 0s normal panelsout;
+            animation: 1s linear 0s normal panelsout;
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;   
+    -webkit-transition: ease 0.5s;   
+    -o-transition: ease 0.5s;   
+    transition: ease 0.5s;
+}
+
+@-webkit-keyframes panelsout {
+    from {
+        height: 51%;
+        opacity: 1;
+    }
+
+    to {
+        height: 0%;
+        opacity: 0;
+    }
+}
+
+@keyframes panelsout {
+    from {
+        height: 51%;
+        opacity: 1;
+    }
+
+    to {
+        height: 0%;
+        opacity: 0;
+    }
+}
+
+#lineloading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+            box-shadow: 0 0 5px #fff;
+    width: 0;
+    height: 2px;
+    z-index: 101;
+    -webkit-animation: 2.5s linear 0s normal linego;
+            animation: 2.5s linear 0s normal linego;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+
+}
+
+@-webkit-keyframes linego {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes linego {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 700px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    -webkit-box-shadow: inset 0 0 5px #000000;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #000000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #FFFFFF;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#proj {
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    font-weight: bold;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+#proj:hover {
+    color: #A0a0a0;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+#logo {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    height: 35px;
+    width: 30px;
+    left: -0px;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 10;
+    -webkit-transition: ease 1s;
+    -o-transition: ease 1s;
+    transition: ease 1s;
+}
+
+#logo>span {
+    -webkit-transition: ease 1s;
+    -o-transition: ease 1s;
+    transition: ease 1s;
+}
+
+#logo>span:hover {
+    -webkit-transition: ease 1s;
+    -o-transition: ease 1s;
+    transition: ease 1s;
+}
+
+#logo>span:nth-child(1){
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#logo>span:nth-child(2){
+    width: 25%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 68%;
+    top: 1%;
+    -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+
+#logo>span:nth-child(3){
+    width: 25%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 68%;
+    top: 53%;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+
+#logo>span:nth-child(4){
+    width: 25%;
+    height: 32%;
+    background-color: #fff;
+    position: absolute;
+    left:51%;
+    top: 36%;
+}
+
+#wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+#block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 100%;
+}
+
+#scrollbtn {
+    position: absolute;
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    bottom: 100px;
+    left: 260px;
+    letter-spacing: 3px;
+    font-size: 0.9em;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+#scrollbtn:hover {
+    color: #A0a0a0;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+#scrollline {
+    position: absolute;
+    bottom: 0px;
+    height: 0px;
+    width: 0.09em;
+    background-color: #fff;
+    left: 297.5px;
+    -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+            animation: 2s linear 0s normal none infinite running scrolllin;
+}
+
+@-webkit-keyframes scrolllin{
+    0%{
+        height: 0px;
+        bottom: 50px;
+    }
+    50% {
+        height: 50px;
+        bottom: 0px;
+    }
+    100% {
+        bottom: 0px;
+        height: 0px;
+    }
+}
+
+@keyframes scrolllin{
+    0%{
+        height: 0px;
+        bottom: 50px;
+    }
+    50% {
+        height: 50px;
+        bottom: 0px;
+    }
+    100% {
+        bottom: 0px;
+        height: 0px;
+    }
+}
+
+
+#socialmedia {
+    position: absolute;
+    right: 0%;
+    color: #fff;
+    bottom: 50px;
+    z-index: 5;
+    display: block;
+    z-index: 10;
+}
+
+#socialmedia>ul>li {
+    margin-left: 25px;
+    font-size: 1em;
+    letter-spacing: 4px;
+    display: inline;
+    -webkit-transition: all 0.3s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+.inst:hover {
+    color: #f92b44;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+.fb:hover {
+    color: #325cff;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+.in:hover {
+    color: #00c4ff;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+.git:hover {
+    color: #959595;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+
+.imgbl {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    height: 600px;
+    width: 600px;
+    display: block;
+}
+
+.imgbl>img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 10;
+}
+
+
+.fullimgin {
+    -webkit-animation:  0.5s linear 0s normal none running fullimgin;
+            animation:  0.5s linear 0s normal none running fullimgin;
+}
+
+.fullimgout {
+    -webkit-animation:  0.5s linear 0s normal none running fullimgout;
+            animation:  0.5s linear 0s normal none running fullimgout;
+}
+
+@-webkit-keyframes fullimgin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fullimgin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fullimgout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fullimgout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.increase {
+    -webkit-animation:  1s linear 0s normal none running increase;
+            animation:  1s linear 0s normal none running increase;
+}
+
+.decrease {
+    -webkit-animation:  0.7s linear 0s normal none running decrease;
+            animation:  0.7s linear 0s normal none running decrease;
+}
+
+@-webkit-keyframes increase {
+    from {
+        height: 0%;
+        width: 0%;
+    }
+    to {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes increase {
+    from {
+        height: 0%;
+        width: 0%;
+    }
+    to {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes decrease {
+    0% {
+        height: 100%;
+        width: 100%;
+    }
+    30% {
+        height: 80%;
+        width: 80%;
+    }
+    100% {
+        height: 0%;
+        width: 0%;
+    }
+}
+
+@keyframes decrease {
+    0% {
+        height: 100%;
+        width: 100%;
+    }
+    30% {
+        height: 80%;
+        width: 80%;
+    }
+    100% {
+        height: 0%;
+        width: 0%;
+    }
+}
+
+.textab {
+    color: #e6e6e6;
+    width: 420px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.25em;
+    font-size: 1.25em;
+    font-weight: normal;
+  }
+
+.textab>strong {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+#txt1, #txt2, #txt3, #txt4 {
+    display: none;
+    height: auto;
+    opacity: 1;
+}
+
+#txt1.hidecur, #txt2.hidecur, #txt3.hidecur, #txt4.hidecur {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    -webkit-animation:  0.5s linear 0s normal none running hidecur;
+            animation:  0.5s linear 0s normal none running hidecur;
+    -webkit-transition: top 1s ease-out 0.5s;
+    -o-transition: top 1s ease-out 0.5s;
+    transition: top 1s ease-out 0.5s;
+  }
+
+#txt1.animup, #txt2.animup, #txt3.animup, #txt4.animup {
+    -webkit-animation:  0.7s linear 0s normal none running anup;
+            animation:  0.7s linear 0s normal none running anup;
+    -webkit-transition: top 1s ease-out 0.5s;
+    -o-transition: top 1s ease-out 0.5s;
+    transition: top 1s ease-out 0.5s;
+}
+
+#txt1.animdown, #txt2.animdown, #txt3.animdown, #txt4.animdown {
+    -webkit-animation:  0.7s linear 0s normal none running andown;
+            animation:  0.7s linear 0s normal none running andown;
+    -webkit-transition: top 1s ease-out 0.5s;
+    -o-transition: top 1s ease-out 0.5s;
+    transition: top 1s ease-out 0.5s;
+}
+
+@-webkit-keyframes hidecur {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+@keyframes hidecur {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+@-webkit-keyframes anup {
+    from {
+        opacity: 0;
+        margin-top: 20px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+  
+@keyframes anup {
+    from {
+        opacity: 0;
+        margin-top: 20px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@-webkit-keyframes andown {
+    from {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes andown {
+    from {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+
+@media(max-width: 1400px) {
+    #proj {
+        position: absolute;
+        right: 0px;
+        top: 55px;
+        font-weight: bold;
+        font-size: 0.9em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 45px;
+        height: 35px;
+        width: 30px;
+        left: 0;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 500px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 850px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 100px;
+        left: 160px;
+        letter-spacing: 3px;
+        font-size: 0.9em;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 197.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 50px;
+        z-index: 5;
+        display: block;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 15px;
+        font-size: 0.9em;
+        letter-spacing: 4px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 400px;
+        width: 400px;
+        display: block;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1em;
+        font-size: 1.15em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 1000px) {
+    #proj {
+        position: absolute;
+        right: 0px;
+        top: 25px;
+        font-weight: bold;
+        font-size: 0.7em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        height: 25px;
+        width: 21px;
+        left: 0;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 300px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 550px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 40px;
+        left: 100px;
+        letter-spacing: 3px;
+        font-size: 0.5em;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 124.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 20px;
+        }
+        50% {
+            height: 20px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 20px;
+        }
+        50% {
+            height: 20px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: block;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 250px;
+        width: 250px;
+        display: block;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1em;
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 600px)  {
+    #proj {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        font-weight: bold;
+        font-size: 0.5em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    header {
+        position: absolute;
+        width: 300px;
+        top: 0px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
+        padding: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 0.95em;
+        height: 10px;
+        color: #fff;
+        z-index: 10;
+        text-align: right;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        height: 15px;
+        width: 10px;
+        left: 0;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-width: 310px;
+        min-height: 160px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 300px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 20px;
+        left: 50.3px;
+        letter-spacing: 1px;
+        font-size: 0.3em;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 3.9em;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 15px;
+        }
+        50% {
+            height: 15px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 15px;
+        }
+        50% {
+            height: 15px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 5px;
+        z-index: 5;
+        display: block;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 3px;
+        font-size: 0.3em;
+        letter-spacing: 1px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 120px;
+        width: 120px;
+        display: block;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 130px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1em;
+        font-size: 0.4em;
+        font-weight: normal;
+      }
+}
+
+@media(min-width: 1400px) {
+    #block {
+        height: 95%;
+    }
+}
+
+@media(max-width: 1000px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        font-weight: bold;
+        font-size: 1em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        height: 25px;
+        width: 21px;
+        left: 0;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 300px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 700px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 70px;
+        left: 90px;
+        letter-spacing: 3px;
+        font-size: 0.8em;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 124.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 20px;
+        }
+        50% {
+            height: 20px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 20px;
+        }
+        50% {
+            height: 20px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: block;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 1em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 400px;
+        width: 400px;
+        display: block;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 320px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1em;
+        font-size: 1.1em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 720px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: 0px;
+        top: 20px;
+        font-weight: bold;
+        font-size: 1em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        height: 25px;
+        width: 21px;
+        left: 0;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 300px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 500px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 70px;
+        left: 90px;
+        letter-spacing: 3px;
+        font-size: 0.7em;
+        -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 121.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 20px;
+        }
+        50% {
+            height: 20px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 20px;
+        }
+        50% {
+            height: 20px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: block;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 290px;
+        width: 290px;
+        display: block;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 230px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1em;
+        font-size: 0.8em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 550px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: 0px;
+        top: 25px;
+        font-weight: bold;
+        font-size: 1em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        height: 25px;
+        width: 20px;
+        left: 0;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 600px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 400px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 20px;
+        left: 20px;
+        letter-spacing: 3px;
+        font-size: 0.7em;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 121.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: none;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 290px;
+        width: 290px;
+        display: none;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 380px;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.3em;
+        font-size: 1.3em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 450px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        font-weight: bold;
+        font-size: 1em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        height: 25px;
+        width: 20px;
+        left: 10px;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 500px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 370px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 20px;
+        left: 40px;
+        letter-spacing: 3px;
+        font-size: 0.7em;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 121.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: none;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 290px;
+        width: 290px;
+        display: none;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 320px;
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.3em;
+        font-size: 1.1em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 370px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right:5px;
+        top: 25px;
+        font-weight: bold;
+        font-size: 0.9em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        height: 25px;
+        width: 20px;
+        left: 10px;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 440px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 310px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 20px;
+        left: 40px;
+        letter-spacing: 3px;
+        font-size: 0.7em;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 121.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: none;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 290px;
+        width: 290px;
+        display: none;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 260px;
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.3em;
+        font-size: 0.9em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 319px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: -30px;
+        top: 25px;
+        font-weight: bold;
+        font-size: 0.9em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        height: 25px;
+        width: 20px;
+        left: -33px;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 320px;
+        min-width: 225px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 220px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 20px;
+        left: 40px;
+        letter-spacing: 3px;
+        font-size: 0.7em;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 121.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 50px;
+        }
+        50% {
+            height: 50px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: none;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 290px;
+        width: 290px;
+        display: none;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 200px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.3em;
+        font-size: 0.7em;
+        font-weight: normal;
+      }
+}
+
+@media(max-width: 290px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: -10px;
+        top: 20px;
+        font-weight: bold;
+        font-size: 0.9em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        height: 25px;
+        width: 20px;
+        left: 0px;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+}
+
+@media(max-width: 230px) and (orientation: portrait) {
+    #proj {
+        position: absolute;
+        right: -10px;
+        top: 25px;
+        font-weight: bold;
+        font-size: 0.9em;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #proj:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #logo {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        height: 25px;
+        width: 20px;
+        left: -10px;
+        background: none;
+        outline: none;
+        border: none;
+        z-index: 10;
+    }
+    
+    body {
+        min-height: 280px;
+        min-width: 160px;
+    }
+
+    #block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 160px;
+        height: 100%;
+    }
+
+    #scrollbtn {
+        position: absolute;
+        border: none;
+        background: none;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        bottom: 10px;
+        left: 40px;
+        letter-spacing: 2px;
+        font-size: 0.5em;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollbtn:hover {
+        color: #A0a0a0;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    #scrollline {
+        position: absolute;
+        bottom: 0px;
+        height: 0px;
+        width: 0.09em;
+        background-color: #fff;
+        left: 121.5px;
+        -webkit-animation: 2s linear 0s normal none infinite running scrolllin;
+                animation: 2s linear 0s normal none infinite running scrolllin;
+    }
+
+    @-webkit-keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 30px;
+        }
+        50% {
+            height: 30px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+    @keyframes scrolllin{
+        0%{
+            height: 0px;
+            bottom: 30px;
+        }
+        50% {
+            height: 30px;
+            bottom: 0px;
+        }
+        100% {
+            bottom: 0px;
+            height: 0px;
+        }
+    }
+
+
+    #socialmedia {
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        bottom: 15px;
+        z-index: 5;
+        display: none;
+        z-index: 10;
+    }
+
+    #socialmedia>ul>li {
+        margin-left: 10px;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        display: inline;
+        -webkit-transition: all 0.3s;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .imgbl {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        height: 290px;
+        width: 290px;
+        display: none;
+    }
+
+    .textab {
+        color: #e6e6e6;
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        -webkit-transform: translate(0%, -50%);
+            -ms-transform: translate(0%, -50%);
+                transform: translate(0%, -50%);
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.3em;
+        font-size: 0.5em;
+        font-weight: normal;
+      }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+ 	<title>Portfolio</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<style>
+	.portfolio-bl {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		visibility:hidden;
+	  	opacity:0;
+	  	transition:all 0.5s ease;
+	}
+
+	.work {
+		display: flex;
+		width: 25%;
+	}
+</style>
+<body>
+	<header id="menu">
+		<p><a href="index.html">ILLYA KUPCHENKO</a></p>
+		<ul>
+			<li><a href="work.html">+Projects</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+		</ul>
+		<button id="toggle"><span></span></button>
+		<div id="menumob">
+			<div id="menin">
+				<a href="work.html">Projects</a><br><br><br>
+				<a href="about.html">About</a><br><br><br>
+				<a href="contacts.html">Contacts</a>
+			</div>
+		</div>
+
+	</header>
+
+	<div id="socialmedia">
+		<ul>
+			<li><a href="https://www.instagram.com/illuha_kupchenko" target="_blank">instagram</a></li>
+			<li><a href="https://www.facebook.com/illuhakupchenko" target="_blank">facebook</a></li>
+			<li><a href="https://www.linkedin.com/in/illuhakupchenko/" target="_blank">linkedin</a></li>
+			<li><a href="https://github.com/illuhakupchenko" target="_blank">github</a></li>
+		</ul>
+	</div>
+
+	<div class="preloader">
+  		<div class="preloader_inner">100%</div>
+	</div>
+
+	<div class="portfolio-bl">
+		<div class="work">
+			<h1>1</h1>
+		</div>
+		<div class="work">
+			<h1>2</h1>
+		</div>
+		<div class="work">
+			<h1>3</h1>
+		</div>
+		<div class="work">
+			<h1>4</h1>
+		</div>
+	</div>
+
+	<p id="pstxt">P.S. <br>If you are a web designer, please contact me!</p>
+
+  <script src="js/mobilemenu.js"></script>
+
+  <script>
+		loader();
+		function loader(_success) {
+		    var obj = document.querySelector('.preloader'),
+		    inner = document.querySelector('.preloader_inner'),
+		    page = document.querySelector('.portfolio-bl');
+		    obj.classList.add('show');
+		    page.classList.remove('show');
+		    var w = 0,
+		        t = setInterval(function() {
+		            w = w + 1;
+		            inner.textContent = w+'%';
+		            if (w === 100){
+		                obj.classList.remove('show');
+		                page.classList.add('show');
+		                clearInterval(t);
+		                w = 0;
+		                if (_success){
+		                    return _success();
+		                }
+		            }
+		        }, 20);
+		}
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>ILLYA | Programmer</title>
+
+	<link rel="stylesheet" href="css/indexstyle.css">
+
+	<link rel="stylesheet" href="css/fonts/fonts.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="prel">
+		<div id="toppanel"></div>
+		<div id="lineloading"></div>
+		<div id="bottompanel"></div>
+	</div>
+	<div id="wrapper">
+		<a href="https://illuhakupchenko.github.io" id="logoa"><button id="logo"><span></span><span></span><span></span><span></span></button></a>
+		<div id="menu">
+			<ul>
+				<li><a href="about.html">about</a></li>
+				<li><a href="work.html">portfolio</a></li>
+				<li><a href="contacts.html">contact</a></li>
+			</ul>
+		</div>
+		
+		<div id="bl_text">
+			<p id="hello_txt">Hi there</p>
+			<p id="name_txt">My name is <strong><em><span class="namemy">ILLYA</span></em></strong></p>
+			<img src="img/me_main.png" alt="me" id="me_main">
+			<img src="img/Me-on-armchair.png" alt="me" id="me_main_colored" onmouseover="clearInts();"onmouseout="startAnim();"> 
+			<p id="dvlpr_txt"><span>I</span> <span>am</span> <span>a</span> <span class="soft">software</span> <span>developer</span></p>
+			<a href="#" id="downld_CV">download CV</a>
+		</div>
+		
+		<div id="recent-work">
+			<span></span>
+			<button id="btn_recent-work">recent work</button>
+		</div>
+	</div>
+	
+	<script>
+		prel = document.getElementById('prel');
+		setTimeout("prel.style.display='none'", 2400);
+
+		photo = document.getElementById('me_main_colored');
+		dark_photo = document.getElementById('me_main');
+
+		let timer = null, timer1 = null, timer2 = null;
+		let mouseover = false;
+		let timerDark = 0, timerColor = 0;
+		
+		changeImgs();
+
+		setTimeout(() => {
+			clearInts();
+			mouseover = false;
+			timerDark = 5000;
+			timerColor = 10000;
+			dark_photo.style.opacity = 1;
+			changeImgs();
+		}, 2450);
+
+		/*setTimeout(() => {
+			if(timer==undefined && timer1==undefined && timer2==undefined){
+				changeOpacity("colored");
+			}
+		}, 7000);*/
+		
+		function changeOpacity(color) {
+			var n = 0;
+			if(color == "colored"){
+				n = 0;
+			}
+			else {
+				n = 1;
+			}
+			if(!mouseover){
+				timer = setInterval(function() {
+					if (color == "colored"){
+						n += 0.1;
+						if (n >= 1) {
+							clearInterval(timer);
+							setTimeout(changeImgs, timerDark);
+						}
+						else {
+							photo.style.opacity = n;
+						}	
+					}
+					else {
+						n -= 0.1;
+						if (n <= 0) {
+							clearInterval(timer);
+							setTimeout(changeOpacity, timerColor, "colored");
+						}
+						else {
+							photo.style.opacity = n;
+						}	
+					}
+				}, 100);		
+			}
+		}
+
+		
+		function changeImgs() {
+			var n = 0;
+			if(!mouseover){
+				timer1 = setInterval(function() {
+					
+					n++;
+					if (n >= 10) {
+						clearInterval(timer1);
+						setTimeout(changeOpacity, timerDark, "dark");
+						photo.src='img/Me-on-armchair.png';	
+					}
+					else {
+						photo.src='img/animmain/Me-on-armchair' + n +'.png';	
+					}	
+				
+				}, 110);
+			}	
+		}
+
+		function clearInts(){
+			mouseover = true;
+		
+			if (prel.style.display!="none") {
+				prel.style.display = "none";
+				timerDark = 5000;
+				timerColor = 10000;
+			}
+			max_id = setTimeout(function () {});
+			while (max_id--) {
+				clearTimeout(max_id);
+			}
+		
+			photo.src='img/Me-on-armchair.png';	
+			photo.style.opacity = 1;
+			dark_photo.style.opacity = 0;
+		}
+
+		function startAnim() {
+			mouseover = false;
+
+			if (prel.style.display!="none") {
+				prel.style.display = "none";
+				timerDark = 5000;
+				timerColor = 10000;
+			}
+			max_id = setTimeout(function () {});
+			while (max_id--) {
+				clearTimeout(max_id);
+			}
+			dark_photo.style.opacity = 1;
+			setTimeout(changeOpacity, 2000, "dark");
+			
+		}
+	</script>
+</body>
+</html>

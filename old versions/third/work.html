@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+ 	<title>Portfolio</title>
+ 	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+	<link rel="manifest" href="img/icons/site.webmanifest">
+	<link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#000000">
+	<meta name="msapplication-TileColor" content="#393939">
+	<meta name="theme-color" content="#000000">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<style>
+	.portfolio-bl {
+		height: 100%;
+		width: 100%;
+		display: flex;
+	  	transition:all 0.5s ease;
+	}
+
+	.work {
+		display: flex;
+		width: 25%;
+	}
+</style>
+<body>
+	<header id="menu">
+		<a href="https://illuhakupchenko.github.io"><button id="logo"><span></span><span></span><span></span><span></span></button></a>
+		<ul>
+			<li><a href="work.html">+projects</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="contacts.html">contacts</a></li>
+		</ul>
+		<button id="toggle"><span></span></button>
+		<div id="menumob">
+			<div id="menin">
+				<a href="work.html">+projects</a><br><br>
+				<a href="about.html">about</a><br><br>
+				<a href="contacts.html">contacts</a>
+			</div>
+		</div>
+
+	</header>
+
+	<div id="socialmedia">
+		<ul>
+			<li><a href="https://www.instagram.com/illuha_kupchenko" class="inst" target="_blank">instagram</a></li>
+			<li><a href="https://www.facebook.com/illuhakupchenko" class="fb" target="_blank">facebook</a></li>
+			<li><a href="https://www.linkedin.com/in/illuhakupchenko/" class="in" target="_blank">linkedin</a></li>
+			<li><a href="https://github.com/illuhakupchenko" class="git" target="_blank">github</a></li>
+		</ul>
+	</div>
+
+	<div class="portfolio-bl">
+		<div class="work">
+			<h1>1</h1>
+			<a href="portfolio/auto/index.html">auto</a>
+			<a href="portfolio/autocentreminsk/index.html">autominsk</a>
+			<a href="portfolio/barber/index.html">barbershop</a>
+		</div>
+		<div class="work">
+			<h1>2</h1>
+		</div>
+		<div class="work">
+			<h1>3</h1>
+		</div>
+		<div class="work">
+			<h1>4</h1>
+		</div>
+	</div>
+
+	<p id="pstxt">P.S. <br>If you are a web designer, please contact me!</p>
+
+  <script src="js/mobilemenu.js"></script>
+
+</body>
+</html>

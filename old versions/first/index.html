@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Illya | Programmer</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<style>
+	
+
+	#mainpage {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		visibility:hidden;
+	  	opacity:0;
+	  	transition:all 0.1s ease;
+	}
+
+	#blinmainp {
+		position: relative;
+		width: 1100px;
+		height: 600px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#meph {
+		float: right;
+		height: 600px;
+	}
+
+	#txtm {
+		position: absolute;
+		top: 50%;
+		height: 180px;
+		transform: translate(0, -50%);
+	}
+
+	#hello, #nm, #dvlpr {
+		font-size: 2.5em;
+	}
+
+	#nm {
+		margin-top: 5px;
+	}
+
+	#dvlpr {
+		margin-top: 50px;
+	}
+
+	@media(max-height: 710px) {
+		#blinmainp {
+			height: 80vh;
+		}
+
+		#meph {
+			height: 80vh;
+		}
+	}
+
+	@media(max-width: 1150px) {
+		#blinmainp {
+			width: 70%;
+		}
+	}
+
+	@media(max-width: 900px) {
+		header>ul {
+			display: none;
+		}
+	}
+
+	@media(max-width: 850px) {
+		#blinmainp {
+			width: 90%;
+		}
+		#dvlpr {
+			width: 320px;
+		}
+
+		#txtm {
+			height: 280px;
+			top: 50%;
+		}
+	}
+
+	@media(max-width: 850px) and (max-height: 450px) {
+		#txtm {
+			height: 50%;
+		}
+	}
+
+	@media(max-width: 600px) {
+
+		#socialmedia {
+			display: none;
+		}
+
+		header>p {
+			-o-font-size: 0.7em;
+		}
+
+		#txtm {
+			height: 100px;
+		}
+
+		#hello, #nm, #dvlpr {
+			font-size: 1.2em;
+		}
+
+		#nm {
+			margin-top: 5px;
+		}
+
+		#dvlpr {
+			margin-top: 40px;
+			width: auto;
+		}
+
+	}
+
+	@media(max-height: 450px) {
+
+		#socialmedia {
+			display: none;
+		}
+
+		#blinmainp {
+			width: 70%;
+		}
+
+		header>p {
+			font-size: 0.7em;
+		}
+
+		#hello, #nm, #dvlpr {
+			font-size: 1.2em;
+		}
+
+		#txtm {
+			top: 60%;
+		}
+
+		#dvlpr {
+			margin-top: 20px;
+		}
+
+	}
+
+	@media(max-width: 420px) and (min-height: 800px) and (max-height: 830px) {
+		#txtm {
+			top: 40px;
+			left: 10px;
+			font-size: 1.3em;
+		}
+
+		#meph {
+			margin-top: 170px;
+			height: 500px;
+			margin-right: 50px;
+		}
+	}
+
+	@media(max-width: 420px) and (min-height: 730px) and (max-height: 800px) {
+		#txtm {
+			top: 70px;
+			left: 10px;
+			font-size: 1.2em;
+		}
+
+		#meph {
+			margin-top: 160px;
+			margin-right: 50px;
+			height: 500px;
+		}
+	}
+
+	@media(max-width: 420px) and (min-height: 630px) and (max-height: 730px) {
+		#txtm {
+			top: 70px;
+			left: 10px;
+			font-size: 1.1em;
+		}
+
+		#meph {
+			margin-top: 160px;
+			height: 400px;
+			margin-right: 50px;
+		}
+
+		#dvlpr {
+			margin-top: 30px;
+		}
+	}
+
+	@media(max-width: 420px) and (min-height: 500px) and (max-height: 630px) {
+		#txtm {
+			top: 70px;
+			left: 10px;
+			font-size: 1em;
+		}
+
+		#meph {
+			margin-top: 160px;
+			height: 330px;
+			margin-right: 50px;
+		}
+
+		#dvlpr {
+			margin-top: 30px;
+		}
+	}
+
+
+
+</style>
+
+<body>
+
+	<div class="preloader">
+  		<div class="preloader_inner">100%</div>
+	</div>
+
+	<header id="menu">
+		<p><a href="index.html">ILLYA KUPCHENKO</a></p>
+		<ul>
+			<li><a href="work.html">+Projects</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contacts.html">Contacts</a></li>
+		</ul>
+		<button id="toggle"><span></span></button>
+		<div id="menumob">
+			<div id="menin">
+				<a href="work.html">Projects</a><br><br><br>
+				<a href="about.html">About</a><br><br><br>
+				<a href="contacts.html">Contacts</a>
+			</div>
+		</div>
+
+	</header>
+
+	<div id="socialmedia">
+		<ul>
+			<li><a href="https://www.instagram.com/illuha_kupchenko" target="_blank">instagram</a></li>
+			<li><a href="https://www.facebook.com/illuhakupchenko" target="_blank">facebook</a></li>
+			<li><a href="https://www.linkedin.com/in/illuhakupchenko/" target="_blank">linkedin</a></li>
+			<li><a href="https://github.com/illuhakupchenko" target="_blank">github</a></li>
+		</ul>
+	</div>
+
+	<section id="mainpage">
+		<div id="blinmainp">
+			<div id="txtm">
+				<p id="hello"> <span class="element1"></span></p>
+				<p id="nm"> <span class="element2"></span></p>
+				<p id="dvlpr"> <span class="element3"></span></p>
+			</div>
+			<img src="img/mepbl.png" alt="me" id="meph">
+		</div>
+	</section>
+
+	<p id="pstxt">P.S. <br>If you are a web designer, please contact me!</p>
+
+	<script src="js/typed.js"></script>
+	<script src="js/mobilemenu.js"></script>
+	<script>
+		loader();
+		function loader(_success) {
+		    var obj = document.querySelector('.preloader'),
+		    inner = document.querySelector('.preloader_inner'),
+		    page = document.querySelector('#mainpage');
+		    obj.classList.add('show');
+		    page.classList.remove('show');
+		    var w = 0,
+		        t = setInterval(function() {
+		            w = w + 1;
+		            inner.textContent = w+'%';
+		            if (w === 100){
+		                obj.classList.remove('show');
+		                page.classList.add('show');
+		                clearInterval(t);
+		                w = 0;
+		                if (_success){
+		                    return _success();
+		                }
+		            }
+		        }, 20);
+		}
+	</script>
+
+</body>
+</html>

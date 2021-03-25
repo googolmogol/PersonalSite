@@ -1,0 +1,937 @@
+#prel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#toppanel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 51%;
+    background-color: #000;
+    z-index: 100;
+    opacity: 1;
+    -webkit-animation: 1s linear 0s normal panelsout;
+            animation: 1s linear 0s normal panelsout;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+#bottompanel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 51%;
+    background-color: #000;
+    z-index: 100;
+    opacity: 1;
+    -webkit-animation: 1s linear 0s normal panelsout;
+            animation: 1s linear 0s normal panelsout;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+@-webkit-keyframes panelsout {
+    from {
+        height: 51%;
+        opacity: 1;
+    }
+
+    to {
+        height: 0%;
+        opacity: 0;
+    }
+}
+
+@keyframes panelsout {
+    from {
+        height: 51%;
+        opacity: 1;
+    }
+
+    to {
+        height: 0%;
+        opacity: 0;
+    }
+}
+
+#lineloading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+            box-shadow: 0 0 5px #fff;
+    width: 0;
+    height: 2px;
+    z-index: 101;
+    -webkit-animation: 1.5s linear 0s normal linego;
+            animation: 1.5ss linear 0s normal linego;
+        -webkit-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+
+}
+
+@-webkit-keyframes linego {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes linego {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    color: #ffffff;
+    min-height: 500px;
+    min-width: 1200px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    -webkit-box-shadow-: inset 0 0 5px #000000;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow-: inset 0 0 6px #000000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow-: inset 0 0 6px #FFFFFF;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#hello_txt, #name_txt {
+    font-family: 'SF UI Text';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+}
+
+#me_main {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    height: 170%;
+    z-index: 5;
+    -webkit-transition: all 0.6s;
+    -webkit-transition: ease 0.6s;
+    -o-transition: ease 0.6s;
+    transition: ease 0.6s;
+    outline: none;
+}
+
+#me_main_colored{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    height: 170%;
+    z-index: 6;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    outline: none;
+}
+
+#me_main_colored:hover {
+    height: 180%;
+}
+
+#dvlpr_txt {
+    position: absolute;
+    left: 100px;
+    top: 120px;
+    font-family: 'SF UI Display';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.3em;
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    z-index: 6;
+}
+
+
+#dvlpr_txt>span, #name_txt>strong>em>span {
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    cursor: pointer;
+}
+
+#dvlpr_txt>span:hover, #name_txt>strong>em>span:hover {
+    font-size: 1.1em;
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+.namemy:hover {
+    background-color: rgba(192, 192, 192, 0.589);
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.soft:hover {
+    background-color: rgba(192, 192, 192, 0.589);
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#bl_text {
+    width: 1000px;
+    height: 290px;
+    font-size: 1em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#menu {
+    position: absolute;
+    right: 7%;
+    top: 5.5%;
+    z-index: 10;
+}
+
+#menu>ul>li {
+    margin-left: 15px;
+    display: inline;
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    font-family: 'SF UI Text';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+#menu>ul>li>a {
+    position: relative;
+    line-height: 1; /*задаём высоту строки*/
+}
+
+
+#menu>ul>li>a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 3px; /*задаём ширину линии*/
+	background-color: #ffffff; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.4s ease-out; /*задаём время анимации*/
+}
+
+#menu>ul>li>a:hover:after,
+#menu>ul>li>a:focus:after {
+	width: 99%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+#downld_CV {
+    position: absolute;
+    bottom: 0;
+    font-family: 'SF UI Text';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5em;
+    border: 7px solid #ffffff;
+    border-radius: 10px;
+    padding: 7px;
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+#downld_CV:hover {
+    margin-left: 10px;
+    margin-top: 20px;
+    color: firebrick;
+    border: 4px solid gray;
+    -webkit-transition: all 0.5s;
+    -webkit-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    font-weight: 900;
+}
+
+#recent-work {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+}
+
+#recent-work>span {
+    position: absolute;
+    left: -6em;
+    top: 0.6em;
+    width: 5em;
+    height: 2px;
+    background-color: honeydew;
+}
+
+#btn_recent-work {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    font-family: 'SF UI Text';
+    font-weight: 600;
+    font-style: bold;
+    font-size: 1em;
+}
+
+/*
+***************************************************************************
+***  ***********       *****       *****       ****************************
+***  **********  *****  ***  *****  ***  *****  ***************************
+***  **********  *****  ***  **********  *****  ***************************
+***  **********  *****  ***  **********  *****  ***************************
+***  **********  *****  ***  ***    ***  *****  ***************************
+***  **********  *****  ***  *****  ***  *****  ***************************
+***  **********  *****  ***  *****  ***  *****  ***************************
+***        *****       *****      ******       ****************************
+***************************************************************************
+*/
+
+#logo {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    height: 35px;
+    width: 30px;
+    left: 7%;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 10;
+}
+
+#logo>span:nth-child(1){
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#logo>span:nth-child(2){
+    width: 25%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 68%;
+    top: 1%;
+    -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+
+#logo>span:nth-child(3){
+    width: 25%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 68%;
+    top: 53%;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+
+#logo>span:nth-child(4){
+    width: 25%;
+    height: 32%;
+    background-color: #fff;
+    position: absolute;
+    left:51%;
+    top: 36%;
+}
+
+/*
+***************************************************************************
+***  ***********       *****       *****       ****************************
+***  **********  *****  ***  *****  ***  *****  ***************************
+***  **********  *****  ***  **********  *****  ***************************
+***  **********  *****  ***  **********  *****  ***************************
+***  **********  *****  ***  ***    ***  *****  ***************************
+***  **********  *****  ***  *****  ***  *****  ***************************
+***  **********  *****  ***  *****  ***  *****  ***************************
+***        *****       *****      ******       ****************************
+***************************************************************************
+*/
+
+
+@media(max-width: 1500px) {
+    body {
+        min-width: 1210px;
+        min-height: 600px;;
+    }
+
+    #bl_text {
+        width: 60%;
+        height: 300px;
+        font-size: 0.7em;
+    }
+
+    #dvlpr_txt {
+        top: 120px;
+        left: 30px;
+    }
+
+}
+
+
+@media(max-width: 1210px) {
+    body {
+        min-width: 800px;
+        min-height: 350px;;
+    }
+
+    #bl_text {
+        width: 60%;
+        height: 200px;
+        font-size: 0.7em;
+    }
+
+    #dvlpr_txt {
+        top: 80px;
+    }
+
+    #me_main, #me_main_colored {
+        height: 140%;
+    }
+
+    #me_main_colored:hover {
+        height: 150%;
+    }
+    
+
+}
+
+
+@media(max-width: 1030px) {
+
+
+    #logo {
+        top: 4%;
+        height: 30px;
+        width: 25px;
+    }
+
+    body {
+        min-width: 520px;
+        min-height: 270px;;
+    }
+
+    #bl_text {
+        width: 60%;
+        height: 150px;
+        font-size: 0.5em;
+    }
+
+    #dvlpr_txt {
+        top: 60px;
+    }
+
+    #menu {
+        font-size: 0.7em;
+        top: 7%;
+    }
+    
+    #downld_CV {
+        border: 3px solid #ffffff;
+    }
+
+        
+    #btn_recent-work {
+        font-size: 0.9em;
+    }
+
+
+}
+
+@media(max-width: 730px) {
+
+
+    #logo {
+        top: 4%;
+    }
+
+    body {
+        min-width: 520px;
+        min-height: 250px;;
+    }
+
+    #bl_text {
+        width: 60%;
+        height: 130px;
+        font-size: 0.4em;
+    }
+
+    #dvlpr_txt {
+        top: 50px;
+    }
+
+    #menu {
+        font-size: 0.7em;
+        top: 7%;
+    }
+    
+    #downld_CV {
+        border: 3px solid #ffffff;
+    }
+
+        
+    #btn_recent-work {
+        font-size: 0.7em;
+    }
+
+
+}
+
+@media(max-width: 590px) {
+    body {
+        min-width: 320px;
+        min-height: 180px;
+    }
+
+    #logo_wrapp {
+        top: 2.7%;
+        height: 2em;
+        width: 2em;
+    }  
+
+    #logo-full_wrap {
+        top: 4%;
+        left: 6.5%;
+        height: 1.5em;
+        width: 9em;
+    }
+
+    #logo-fullname {
+        top: 5%;
+    }
+
+    #logo {
+        width: 20px;
+        height: 25px;
+    }
+
+    #bl_text {
+        width: 60%;
+        height: 100px;
+        font-size: 0.3em;
+    }
+
+    #dvlpr_txt {
+        top: 35px;
+    }
+
+    #menu {
+        font-size: 0.5em;
+        top: 7%;
+    }
+    
+    #btn_recent-work {
+        font-size: 0.7em;
+    }
+
+    #downld_CV {
+        border: 2px solid #ffffff;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 470px) {
+    #dvlpr_txt {
+        left: 10px;
+        width: 7em;
+        top: 27px;
+        font-size: 3em;
+    }
+
+    body {
+        min-width: 330px;
+        min-height: 160px;
+    }
+
+    #me_main, #me_main_colored {
+        height: 110%;
+    }
+
+    #me_main_colored:hover {
+        height: 120%;
+    }
+}
+
+@media(max-width: 1400px) and (orientation: portrait){
+    #logo {
+        width: 45px;
+        height: 50px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 4%;
+        font-size: 1.5em;
+    }
+
+    #bl_text {
+        width: 70%;
+        height: 370px;
+        font-size: 1em;
+    }
+
+    #dvlpr_txt {
+        text-align: left;
+        top: 110px;
+        left: 10px;
+        width: 70%;
+    }
+    
+    #btn_recent-work {
+        font-size: 1.9em;
+    }
+
+    #recent-work>span {
+        top: 20px;
+        width: 100px;
+        left: -7em;
+    }
+
+}
+
+@media(max-width: 830px) and (orientation: portrait) {
+
+    #logo {
+        width: 40px;
+        height: 45px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 3.7%;
+        font-size: 1.3em;
+    }
+
+    #bl_text {
+        width: 70%;
+        height: 300px;
+        font-size: 0.9em;
+    }
+
+    #dvlpr_txt {
+        top: 90px;
+        width: 70%;
+    }
+
+    #downld_CV {
+        border: 5px solid #ffffff;
+        padding: 10px;
+    }
+
+    #me_main, #me_main_colored {
+        height: 150%;
+    }
+
+    #me_main_colored:hover {
+        height: 160%;
+    }
+
+}
+
+@media(max-width: 700px) and (orientation: portrait) {
+
+    #logo {
+        width: 40px;
+        height: 45px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 3.7%;
+        font-size: 1.3em;
+    }
+
+    #bl_text {
+        width: 70%;
+        height: 300px;
+        font-size: 0.8em;
+    }
+
+    #dvlpr_txt {
+        top: 90px;
+        width: 70%;
+    }
+
+    #downld_CV {
+        border: 5px solid #ffffff;
+        padding: 10px;
+    }
+
+    #me_main, #me_main_colored {
+        height: 150%;
+    }
+
+    #me_main_colored:hover {
+        height: 160%;
+    }
+
+}
+
+@media(max-width: 600px) and (orientation: portrait) {
+
+    #logo {
+        width: 40px;
+        height: 45px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 3.7%;
+        font-size: 1.3em;
+    }
+
+    #bl_text {
+        width: 70%;
+        height: 300px;
+        font-size: 0.6em;
+    }
+
+    #dvlpr_txt {
+        top: 90px;
+        width: 70%;
+    }
+
+    #downld_CV {
+        border: 5px solid #ffffff;
+        padding: 10px;
+    }
+
+    #me_main, #me_main_colored {
+        height: 150%;
+    }
+
+    #me_main_colored:hover {
+        height: 160%;
+    }
+
+}
+
+@media(max-width: 530px) and (orientation: portrait) {
+    body {
+        min-width: 300px;
+        min-height: 500px;;
+    }
+
+
+    #logo {
+        width: 35px;
+        height: 40px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 4%;
+        font-size: 1em;
+    }
+
+    #bl_text {
+        width: 80%;
+        height: 220px;
+        font-size: 0.6em;
+    }
+
+    #dvlpr_txt {
+        top: 70px;
+        width: 70%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #btn_recent-work {
+        font-size: 1.2em;
+    }
+
+    #recent-work>span {
+        top: 11px;
+        width: 70px;
+        left: -5em;
+    }
+
+}
+
+@media(max-width: 450px) and (orientation: portrait) {
+    body {
+        min-width: 300px;
+        min-height: 500px;;
+    }
+
+
+    #logo {
+        width: 30px;
+        height: 35px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 4%;
+        font-size: 1em;
+    }
+
+    #bl_text {
+        width: 90%;
+        height: 220px;
+        font-size: 0.5em;
+        padding-left: 20px;
+    }
+
+    #dvlpr_txt {
+        top: 70px;
+        width: 70%;
+        left: 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #btn_recent-work {
+        font-size: 1em;
+    }
+
+    #recent-work>span {
+        top: 9px;
+        width: 70px;
+        left: -5em;
+    }
+
+}
+
+@media(max-width: 320px) and (orientation: portrait) {
+    body {
+        min-width: 270px;
+        min-height: 400px;
+    }
+
+
+    #logo {
+        width: 27px;
+        height: 32px;
+        top: 3%;
+    }
+
+    #menu {
+        top: 4%;
+        font-size: 1em;
+    }
+
+    #bl_text {
+        width: 90%;
+        height: 180px;
+        font-size: 0.45em;
+        padding-left: 20px;
+    }
+
+    #dvlpr_txt {
+        top: 55px;
+        width: 70%;
+        left: 20px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #btn_recent-work {
+        font-size: 1em;
+    }
+
+    #recent-work>span {
+        top: 9px;
+        width: 70px;
+        left: -5em;
+    }
+
+}

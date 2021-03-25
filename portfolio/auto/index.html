@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Автосервис</title>
+</head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font: 1em sans-serif;
+}
+
+body {
+    min-height: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+.blin {
+    margin: 0 auto;
+    position: relative;
+    width: 950px;
+    font: 1em sans-serif;
+    color: #fff;
+    font: 1em sans-serif;
+}
+
+.heightmain {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('img/main1.png');
+    background-size: 100% 100%;
+}
+
+
+
+.logo {
+    position: relative;
+    top: 20px;
+    width: 120px;
+    height: 50px;
+    background-image: url('img/logo.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.backcall {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 15px 25px;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu {
+    position: relative;
+    margin-top: 80px;
+}
+.menu li {
+    display: inline;
+    font-size: 1.3em;
+    color: #fff;
+    margin: 20px;
+}
+
+.txtblock {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.maintxt {
+    width: 50%;
+    font-size: 4em;
+}
+
+.blin p {
+    font-size: 1.2em;
+    width: 45%;
+}
+
+.aboutcompany {
+    position: relative;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.aboutcompany .blin {
+    display: flex;
+}
+
+.leftblabout {
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    color: #000;
+    position: relative;
+    bottom: 80px;
+}
+
+.leftblabout p {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.leftblabout img {
+    position: relative;
+    width: 120%;
+}
+
+.rightblabout {
+    display: inline-block;
+    color: #dddddd;
+    background-color: #080729;    
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+.rightblabout p {
+    width: 80%;
+}
+
+.rightblabout ul {
+    margin: 17px;
+}
+
+.rightblabout ul li {
+    list-style-type:disc;
+    color: #d83030;
+    line-height: 1.6em;
+    width: 70%;
+}
+
+.rightblabout ul li span {
+    color: #dddddd;
+    font-size: 1.1em;
+}
+
+
+
+.blingotop {
+    margin: -50px auto;
+    margin-bottom: 200px;
+    background-color: #fff;
+    box-shadow: 0 1px 10px #838383;
+    width: 950px;
+}
+
+.blinline {
+    position: relative;
+    color: black;
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    padding-top: 50px;
+    font-size: 1.2em;
+}
+
+.blinline img {
+    position: absolute;
+    top: -60px;
+    width: 50%;
+    right: 25%;
+}
+
+.blinline p {
+    margin: 10px auto;
+    width: 11em;
+}
+
+.services {
+    position: relative;
+    width: 100%;
+    background-image: url('img/sec.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 70px 0;
+}
+
+.services p {
+    margin: 20px auto;
+    width: 30%;
+}
+
+
+.servin {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+}
+
+.servin h3 {
+    font-size: 1.2em;
+    background-color: #b90930;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.sqinser {
+    margin-top: 70px;
+    position: relative;
+    border: 3px solid red;
+    font-size: 0.7em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.sqinser img {
+    width: 100px;
+}
+
+.sqinser p {
+    width: 10em;
+    position: absolute;
+    top: 120px;
+    left: 1.5em;
+}
+
+.prices {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 1.1em;
+    color: #000;
+    padding-bottom: 70px;
+}
+
+
+.prices p {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.sqinser1 {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background: url('img/1.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.servin1 {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+}
+
+.servin1 h3 { 
+    background-color: #b90930;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.servin1 p {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.sqinser1 h3 {
+    position: absolute;
+    bottom: 20px;
+    background: none;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 50px;
+    position: relative;
+    color: #fff;
+    top: 0;
+    left: 0;
+    background: rgb(215,17,131);
+    background: linear-gradient(9deg, rgba(215,17,131,1) 0%, rgba(231,4,58,1) 35%, rgba(255,0,129,1) 100%);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(215,17,131);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: ease 0.5s;
+}
+
+.btn:hover {
+    top: 2px;
+    left: 2px;
+    box-shadow: none;
+    transition: ease 0.5s;
+}
+
+.portfolio {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: url('img/12.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.portfolio p {
+    margin: 20px auto;
+    margin-bottom: 50px;
+    width: 30%;
+}
+
+.portfolio .blin img {
+    width: 100%;
+}
+
+.reviews {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.leftrev {
+    display: inline-block;
+    color: #000;
+    width: 300px;
+}
+
+.rightrev {
+    position: relative;
+    top: 70px;
+    display: inline-block;
+    color: #000;
+    width: 645px;
+
+}
+
+.inleft {
+    margin-top: 20px;
+    background-color: #080729;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px #080729;
+}
+.inleft p {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: -20px;
+}
+
+footer {
+    background-color: #080729;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .logo {
+    top: 10px;
+}
+
+footer .menu {
+    position: relative;
+    top: -20px;
+    left: 200px;
+    display: inline;
+    position: relative;
+    margin-top: 20px;
+}
+footer .menu li {
+    display: inline;
+    font-size: 1.1em;
+    color: #fff;
+    margin: 10px;
+}
+
+footer .blin p {
+    float: right;
+}
+
+@media (orientation: portrait) {
+    header {
+        height: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .blin {
+        width: 90%;
+    }
+
+    .aboutcompany .blin {
+        display: block;
+    }
+
+    .blin p {
+        width: 90%;
+    }
+
+    body {
+        min-width: 300px;
+    }
+
+    .blinline {
+        margin-top: 40px;
+    }
+
+    .blingotop {
+        width: 90%;
+    }
+
+    .leftblabout {
+        width: 100%;
+    }
+
+    .rightblabout {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    footer .blin .menu {
+        display: none;
+    }
+
+    .leftrev, .rightrev {
+        width: 100%;
+    }
+
+    .rightrev img {
+        width: 100%;
+    }
+
+    .leftblabout {
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        color: #000;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .prices p {
+        width: 90%;
+    }
+
+    .portfolio p {
+        width: 90%;
+    }
+
+    .leftblabout p {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .leftblabout img {
+        position: relative;
+        width: 100%;
+    }
+
+    .rightblabout {
+        display: inline-block;
+        color: #dddddd;
+        background-color: #080729;    
+        padding-left: 30px;
+        width: 90%;
+        padding-top: 50px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        font-size: 0.7em;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+    .rightblabout p {
+        width: 80%;
+    }
+
+    .rightblabout ul {
+        margin: 17px;
+    }
+
+    .rightblabout ul li {
+        list-style-type:disc;
+        color: #d83030;
+        line-height: 1.6em;
+        width: 70%;
+    }
+
+    .rightblabout ul li span {
+        color: #dddddd;
+        font-size: 1.1em;
+    }
+    .services p {
+    margin: 20px auto;
+    width: 90%;
+}
+
+}
+
+@media (max-width: 550px) {
+    header {
+        font-size: 0.7em;
+    }
+    .maintxt {
+        width: 90%;
+    }
+}
+</style>
+<body>
+    <header>
+        <div class="blin heightmain">
+            <div class="logo"></div>
+            <button class="backcall">Обратный звонок</button>
+            <ul class="menu">
+                <li> <a href="#">Главная</a> </li>
+                <li> <a href="#">О компании</a> </li>
+                <li> <a href="#">Услуги</a> </li>
+                <li> <a href="#">Цены</a> </li>
+                <li> <a href="#">Наши работы</a> </li>
+                <li> <a href="#">Отзывы</a> </li>
+                <li> <a href="#">Контакты</a> </li>
+            </ul>
+            <div class="txtblock">
+                <h1 class="maintxt">РЕМОНТ АВТО В КИЕВЕ</h1>
+                <br>
+                <p>Автосервис по ремонту и обслуживанию легковых автомобилей</p>
+            </div>
+        </div>
+    </header>
+    <section class="aboutcompany">
+        <div class="blingotop">
+            <div class="blinline">
+                <img src="img/1.png" alt="1">
+                <h2>Гарантия</h2>
+                <p>Гарантия на все выполненные работы</p>
+            </div>
+            <div class="blinline">
+                <img src="img/2.png" alt="2">
+                <h2>Качество</h2>
+                <p>Только качественные материалы</p>
+            </div>
+            <div class="blinline">
+                <img src="img/3.png" alt="3">
+                <h2>Опыт</h2>
+                <p>Опытные механики, сертификаты</p>
+            </div>
+            <div class="blinline">
+                <img src="img/4.png" alt="4">
+                <h2>Скорость</h2>
+                <p>Выполнение работ точно в срок</p>
+            </div>
+        </div>
+        <div class="blin">
+            <div class="leftblabout" style="text-align: left;">
+                <h2>О компании</h2>
+                <p>
+                    Выполняемые работы на Вашем автомобиле можете наблюдать на мониторе, 
+                    не выходя из комнаты отдыха.
+                </p>
+                <img src="img/go.png" alt="go">
+            </div>
+            <div class="rightblabout" style="text-align: left;">
+                <p>
+                    Автосервис "Престиж" предлагает свои услуги по:
+                </p>
+                <ul>
+                    <li><span>заправке автокондиционеров;</span></li>
+                    <li><span>антибактериальной обработке системы кондиционирования автомобиля.</span></li>
+                </ul>
+                <p>Работа выполняется:</p>
+                <ul>
+                    <li><span>на современном оборудовании;</span></li>
+                    <li><span>в атоматическом режиме;</span></li>
+                    <li><span>производится диагностика и дозаправка ладагентом.</span></li>
+                </ul>
+                <button class="btn">Подробнее о нас</button>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Услуги автосервиса</h2>
+        <p>Каждый вид услуг включает в себя большое количество более мелких работ и технологических операций</p>
+        <div class="blin">
+            <div class="servin">
+                <h3>Ремонт</h3>
+                <div class="sqinser">
+                    <img src="img/21.png" alt="1">
+                    <p>Ремонт АКПП <br> </p>
+                </div>
+            </div>
+            <div class="servin">
+                <h3>Техобслуживание</h3>
+                <div class="sqinser">
+                    <img src="img/22.png" alt="2">
+                    <p>Ремонт МКПП</p>
+                </div>
+            </div>
+            <div class="servin">
+                <h3>Диагностика</h3>
+                <div class="sqinser">
+                    <img src="img/23.png" alt="3">
+                    <p>Ремонт генераторов и стартеров</p>
+                </div>
+            </div>
+            <div class="servin">
+                <h3>Ремонт</h3>
+                <div class="sqinser">
+                    <img src="img/24.png" alt="4">
+                    <p>Ремонт ходовой части</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn">Все услуги</button>
+    </section>
+    <section class="prices">
+        <h2>Цены на услуги</h2>
+        <p>Окончательная стоимость работ зависит от сложности выполняемых работ, состояния и конструктивных особенностей автомобиля</p>
+        <div class="blin">
+            <div class="servin1">
+                <h3>Ремонт</h3>
+                <div class="sqinser1">
+                    <p>Ремонт АКПП</p>
+                    <h3>от 200 $</h3>
+                </div>
+            </div>
+            <div class="servin1">
+                <h3>Техобслуживание</h3>
+                <div class="sqinser1">
+                    <p>Ремонт МКПП</p>
+                    <h3>от 200 $</h3>
+                </div>
+            </div>
+            <div class="servin1">
+                <h3>Диагностика</h3>
+                <div class="sqinser1">
+                    <p>Ремонт генераторов и стартеров</p>
+                    <h3>от 200 $</h3>
+                </div>
+            </div>
+            <div class="servin1">
+                <h3>Ремонт</h3>
+                <div class="sqinser1">
+                    <p>Ремонт ходовой части</p>
+                    <h3>от 200 $</h3>
+                </div>
+            </div>
+        </div>
+        <button class="btn">Все услуги</button>
+    </section>
+    <section class="portfolio">
+        <h2>Нашы работы</h2>
+        <p>Мы подходим очень ответственно к каждому клиенту, поэтому качество наших работ высокое</p>
+      
+        <div class="blin">
+            <img src="img/work.png" alt="work">
+            <button class="btn">Все работы</button>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="blin">
+            <div class="leftrev">
+                <h2>Отзывы клиентов</h2>
+                <div class="inleft">
+                    <h3>За честный отзыв</h3>
+                    <p>даём <span style="color: red;">10%</span> скидку на следующий ремонт вашего автомобиля</p>
+                    <button class="btn">Оставить отзыв</button>
+                </div>
+            </div>
+            <div class="rightrev">
+                <img src="img/rev.png" alt="rev">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="blin">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li> <a href="#">Главная</a> </li>
+                <li> <a href="#">О компании</a> </li>
+                <li> <a href="#">Услуги</a> </li>
+                <li> <a href="#">Цены</a> </li>
+                <li> <a href="#">Наши работы</a> </li>
+                <li> <a href="#">Отзывы</a> </li>
+                <li> <a href="#">Контакты</a> </li>
+            </ul>
+            <p>Киев, ул. Автопарковая, 10</p>
+        </div>
+    </footer>
+</body>
+</html>

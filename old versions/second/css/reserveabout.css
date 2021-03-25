@@ -1,0 +1,1346 @@
+body {
+  min-height: 600px;
+  min-width: 1420px;
+}
+#wrapper {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 90%;
+  width: 100%;
+}
+
+#laptop {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: 0;
+  display: none;
+}
+
+#laptopin {
+  width: 50px;
+  height: 40px;
+  background-image: url(../img/laptope.png);
+  background-size: 100% 100%;
+  -webkit-animation: 40s linear 0s normal none infinite running rot;
+  animation: 40s linear 0s normal none infinite running rot;
+}
+
+#button-scroll {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 1em;
+  animation: run 20s infinite ease-in-out;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes run {
+  0% {
+    font-size: 1.2em;
+  }
+  25% {
+    font-size: 0.7em;
+  }
+  50% {
+    font-size: 1.2em;
+  }
+  75% {
+    font-size: 0.7em;
+  }
+  100% {
+    font-size: 1.2em;
+  }
+}
+
+.swiper-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 950px;
+  height: 100%;
+}
+
+#blin {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  z-index: 100;
+}
+
+
+#abouttext {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 1.1em;
+  height: 390px;
+  width: 400px;
+}
+
+#abouttextright {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.1em;
+  transform: translate(0, -50%);
+  height: 380px;
+  width: 407px;
+}
+
+#abouttext>.element4>strong {
+  color: #636363;
+  font-size: 2em;
+  text-shadow: 3px 3px 2px #212121;
+}
+
+#abouttextright>.element5>strong {
+  color: #086AE4;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #212121;
+}
+
+#abouttextright>.element6>strong {
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #212121;
+}
+
+#abouttext>.element7>strong {
+  color: #07E6BF;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #212121;
+}
+
+#rightimg {
+  position: absolute;
+  right: 0;
+  height: 500px;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+}
+
+#rightph, #leftph {
+  height: 100%;
+}
+
+#leftimg {
+  height: 500px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+}
+
+
+
+@media(max-width: 1420px) and (orientation: landscape) {
+
+  body {
+    min-height: 500px;
+    min-width: 1000px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1em;
+    height: 340px;
+    width: 300px;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1em;
+    transform: translate(0, -50%);
+    height: 330px;
+    width: 350px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 400px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #rightph, #leftph {
+    height: 100%;
+  }
+
+  #leftimg {
+    height: 400px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+}
+
+@media(max-width: 1000px) and (orientation: landscape) {
+
+  body {
+    min-height: 290px;
+    min-width: 650px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 0.7em;
+    }
+    25% {
+      font-size: 0.5em;
+    }
+    50% {
+      font-size: 0.7em;
+    }
+    75% {
+      font-size: 0.5em;
+    }
+    100% {
+      font-size: 0.7em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 0.7em;
+    height: 250px;
+    width: 200px;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 0.7em;
+    transform: translate(0, -50%);
+    height: 240px;
+    width: 250px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #212121;
+  }
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 260px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #rightph, #leftph {
+    height: 100%;
+  }
+
+  #leftimg {
+    height: 260px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+}
+
+@media(max-width: 650px) and (orientation: landscape) {
+
+  body {
+    min-height: 230px;
+    min-width: 400px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 0.5em;
+    height: 180px;
+    width: 150px;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 0.5em;
+    transform: translate(0, -50%);
+    height: 180px;
+    width: 150px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 200px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #rightph, #leftph {
+    height: 100%;
+  }
+
+  #leftimg {
+    height: 200px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+}
+
+
+
+
+@media (min-width: 1023px) and (orientation: portrait) {
+
+  body {
+    min-height: 1024px;
+    min-width: 900px;
+  }
+
+  #wrapper {
+    position: relative;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+  }
+
+
+  #button-scroll {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 900px;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 900px;
+    height: 100%;
+  }
+
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1.5em;
+    height: 520px;
+    width: 450px;
+
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.5em;
+    transform: translate(0, -50%);
+    height: 510px;
+    width: 450px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 540px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #rightph, #leftph {
+    height: 100%;
+  }
+
+  #leftimg {
+    height: 540px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+}
+
+@media (max-width: 1023px) and (orientation: portrait) {
+
+  body {
+    min-height: 750px;
+    min-width: 750px;
+  }
+
+  #socialmedia {
+    display: none;
+  }
+
+ #wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+  }
+
+  #logo {
+    top: 10px;
+    height: 30px;
+    width: 20px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1em;
+    height: 350px;
+    width: 320px;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1em;
+    transform: translate(0, -50%);
+    height: 350px;
+    width: 310px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 370px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #rightph, #leftph {
+    height: 100%;
+  }
+
+  #leftimg {
+    height: 370px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+}
+
+@media (max-width: 750px) and (orientation: portrait) {
+
+  body {
+    min-height: 500px;
+    min-width: 500px;
+  }
+
+  #wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+  }
+
+  #socialmedia {
+    display: none;
+  }
+
+  header {
+    padding-top: 20px;
+    font-size: 1.5em;
+  }
+
+  #logo {
+    top: 10px;
+    height: 30px;
+    width: 20px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 0.7em;
+    height: 250px;
+    width: 250px;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 0.7em;
+    transform: translate(0, -50%);
+    height: 250px;
+    width: 230px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 270px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #rightph, #leftph {
+    height: 100%;
+  }
+
+  #leftimg {
+    height: 270px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+}
+
+@media (max-width: 550px) and (orientation: portrait) {
+
+  body {
+    min-height: 450px;
+    min-width: 450px;
+  }
+
+  #wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+  }
+
+  #socialmedia {
+    display: none;
+  }
+
+  #logo {
+    top: 10px;
+    height: 30px;
+    width: 20px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1.3em;
+    height: 450px;
+    width: 100%;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.3em;
+    transform: translate(0, -50%);
+    height: 420px;
+    width: 100%;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+ #rightimg {
+    position: absolute;
+    right: 0;
+    height: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: nonw;
+  }
+
+  #leftimg {
+    height: 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+  }
+}
+
+
+@media (max-width: 450px) and (orientation: portrait) {
+
+  body {
+    min-height: 320px;
+    min-width: 320px;
+  }
+
+  #socialmedia {
+    display: none;
+  }
+
+  #wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+  }
+
+  #logo {
+    top: 15px;
+    height: 30px;
+    width: 20px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1.1em;
+    height: 380px;
+    width: 100%;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.1em;
+    transform: translate(0, -50%);
+    height: 360px;
+    width: 100%;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+ #rightimg {
+    position: absolute;
+    right: 0;
+    height: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: nonw;
+  }
+
+  #leftimg {
+    height: 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+  }
+
+}
+
+@media (max-width: 370px) and (orientation: portrait) {
+
+  body {
+    min-height: 320px;
+    min-width: 320px;
+  }
+
+  #wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 100%;
+  }
+
+  #socialmedia {
+    display: none;
+  }
+
+  #logo {
+    top: 15px;
+    height: 30px;
+    width: 20px;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    font-size: 0.7em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 100%;
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 0.8em;
+    height: 275px;
+    width: 100%;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 0.8em;
+    transform: translate(0, -50%);
+    height: 260px;
+    width: 100%;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px #212121;
+  }
+
+
+  #rightimg {
+    position: absolute;
+    right: 0;
+    height: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: nonw;
+  }
+
+  #leftimg {
+    height: 0px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+  }
+}

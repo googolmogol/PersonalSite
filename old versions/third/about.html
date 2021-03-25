@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="apple-mobile-web-app-capable" content="yes" />
+  	<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+ 	 <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+ 	<link rel="manifest" href="img/icons/site.webmanifest">
+  	<link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#000000">
+  	<meta name="msapplication-TileColor" content="#393939">
+  	<meta name="theme-color" content="#000000">
+
+	<title>About | Myself</title>
+
+  	<link rel="stylesheet" href="css/aboutpage.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="prel">
+		<div id="toppanel"></div>
+		<div id="lineloading"></div>
+		<div id="bottompanel"></div>
+	</div>
+	<div id="wrapper">
+		<div id="block" ontouchstart="initY(event)" ontouchmove="scrollMob(event)">
+			<a href="https://illuhakupchenko.github.io"><button id="logo"><span id="colorful"></span><span></span><span></span><span>		</span></button></a>
+	    	<a id="proj" href="work.html">+projects</a>
+		    
+			<div id="picture1" class="imgbl">
+				<img style="z-index: 3;" id="border1" src="img/aboutimg/circle.png" alt="circle">
+				<img style="z-index: 2;" id="imginfull1" src="img/aboutimg/leg.png" alt="leg">
+				<img style="z-index: 5;" id="imginfull12" src="img/aboutimg/body.png" alt="body">
+			</div>
+			<div id="picture2" class="imgbl">
+				<img style="z-index: 10;" id="imginfull22" src="img/aboutimg/above2.png" alt="body">
+				<img style="z-index: 5;" id="border2" src="img/aboutimg/triangle.png" alt="cuttriangle">
+				<img style="z-index: 3;" id="imginfull2" src="img/aboutimg/under2.png" alt="legs">
+			</div>
+			<div id="picture3" class="imgbl">
+				<img style="z-index: 10;" id="imginfull32" src="img/aboutimg/above.png" alt="shapka">
+				<img style="z-index: 5;" id="border3" src="img/aboutimg/square.png" alt="fullsquare">
+				<img style="z-index: 2;" id="imginfull3" src="img/aboutimg/under.png" alt="shapka">
+			</div>
+			<div id="picture4" class="imgbl">
+				<img id="border4" src="img/aboutimg/pentagon.png" alt="pentagon">
+				<img id="imginfull4" src="img/aboutimg/manlikecut.png" alt="runman">
+			</div>
+	    	<p id="txt1" class="textab">
+	    		<strong><span style="color: #5c5c5c">Short </span><span style="color: #00d6cf">information</span></strong> <br> <br> <br>Full name: Illya Kupchenko <br>Date of Birth: 22 april, 1999 <br>Height: 173 cm <br>Weight: 70 kg <br>Eyes color: brown <br>Hair color: black <br>Status: single <br>Music: rock, rap, hip-hop <br>Movies: action, thriller, comedy <br>Sport: football, volleyball <br>Country: Ukraine <br>City: Kyiv <br>Languages: russian, ukrainian, english
+	    	</p>
+		    <p id="txt2" class="textab">
+		    	<strong> <span style="color: #5c5c5c">What</span> is my <span style="color: #228dfc">knowledge stack?</span> </strong><br> <br> <br> I have experience working with various technologies and programming languages such as HTML/CSS, JavaScript, JQuery, Ajax, C#, .NET, C++, Java, Python, SQL, MySQL, Photoshop, etc. <br> <br> I try to follow IT trends to keep abreast of the latest news. Every day I try to get new information.
+		    </p>
+		    <p id="txt3" class="textab">
+		    	<strong style="color: #ff303f">Education</strong> <br> <br> <br> 2014-2018 <br> <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kyiv college of communication <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; speciality: Software development <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Diploma Junior Developer <br> <br> 2018-2020 <br> <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Odessa National Academy of <br>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; telecommunications <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bachelor's degree in software <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; engineering
+		    </p>
+		    <p id="txt4" class="textab">
+		    	<strong><span style="color: #5c5c5c">What</span> <br> I really <span style="color: #dea51c">like?</span></strong> <br> <br><br> I love sport in all its manifestations. Most of all I love football. I also love volleyball, cycling, swimming. I like to spend time watching movies and listening to music. Sometimes I like to read books. I also like to spend time with friends. <br> <br> I try to improve every day, both physically and mentally.
+		    </p>
+		    <button id="scrollbtn" onclick="switchTxt(1);">SCROLL</button>
+		    <div id="scrollline"></div>
+
+		  	<div id="socialmedia">
+				<ul>
+					<li><a href="https://www.instagram.com/illuha_kupchenko" class="inst" target="_blank">instagram</a></li>
+					<li><a href="https://www.facebook.com/illuhakupchenko" class="fb" target="_blank">facebook</a></li>
+					<li><a href="https://www.linkedin.com/in/illuhakupchenko/" class="in" target="_blank">linkedin</a></li>
+					<li><a href="https://github.com/illuhakupchenko" class="git" target="_blank">github</a></li>
+				</ul>
+			</div>
+	  		
+  		</div>
+  	</div>
+  	<script>
+		setTimeout("document.getElementById('toppanel').style.display='none'", 3400);
+		setTimeout("document.getElementById('bottompanel').style.display='none'", 3400);
+  	</script>
+<script src="js/scrolling.js"></script>
+</body>
+</html>

@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стрижман | Мужские стрижки </title>
+
+    <link rel="stylesheet" href="icon/css/all.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+    body, html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    a { 
+        text-decoration: none;
+        color: #fff;
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(img/mainbarb.png) no-repeat;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        min-height: 600px;
+    }
+
+    .topblock {
+        position: relative;
+        top: 20px;
+        width: 1200px;
+        margin: auto;
+        font-weight: bold;
+    }
+
+    .adr {
+        float: right;
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .adr div {
+        margin-left: 10px;
+    }
+
+    .tel {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .tel i {
+        margin-right: 10px;
+    }
+
+    #menu {
+        position: absolute;
+        left: 20px;
+        top: -10px;
+    }
+
+    #logo {
+        width: 70px;
+        cursor: pointer;
+    }
+
+    .centercont {
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .strman {
+        font-size: 2em;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .lined {
+        position: relative;
+        width: 230px;
+        left: 50%;
+        height: 4px;
+        background-color: #fff;
+        border: none;
+        transform: translate(-50%, 0);
+    }
+
+    .centercont p {
+        font-size: 0.7em;
+    }
+
+    .sectxt {
+        margin-top: 70px;
+        font-size: 4em;
+        color: #cecccc;
+        text-shadow: 1px 1px 3px #acacac;
+        font-weight: normal;
+    }
+
+    .button_bord {
+        margin-top: 70px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 264px;
+        height: 85px;
+        font-size: 1em;
+    }
+
+    .leftb {
+        position: absolute;
+        width: 1px;
+        height: 60%;
+        left: 5px;
+        bottom: 5px;
+        border-left: 1px solid #a46534;
+    }
+
+    .bottomb {
+        position: absolute;
+        width: 30%;
+        height: 1px;
+        bottom: 5px;
+        left: 5px;
+        border-bottom: 1px solid #a46534;     
+    }
+
+    .rightb {
+        position: absolute;
+        width: 1px;
+        height: 60%;
+        top: 5px;
+        right: 5px;
+        border-right: 1px solid #a46534;
+    }
+
+    .topb {
+        position: absolute;
+        width: 30%;
+        right: 5px;
+        height: 1px;
+        top: 5px;
+        border-top: 1px solid #a46534;     
+    }
+
+    .btn {
+        margin: 15px;
+        padding: 20px 40px;
+        background-color: #a46534;
+        font-weight: bold;
+        color: #fff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: ease 0.5s;
+    }
+
+    .btn:hover {
+        margin: 0;
+        padding: 35px 55px;
+        color: #d4d4d4;
+        transition: ease 0.5s;
+    }
+
+    @media (max-width: 1200px) {
+        .topblock {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 570px) {
+        .adr {
+            display: none;
+        }
+
+        #menu {
+            top: -10px;
+        }
+    }
+
+    @media (max-width: 340px) {
+        .sectxt {
+            font-size: 3em;
+        }
+    }
+
+    @media (max-width: 270px) {
+        .button_bord {
+            width: 200px;
+            height: 100px;
+            margin-top: 70px;
+            font-size: 0.8em;
+        }
+
+        .tel i {
+            margin-right: -5px;
+        }
+
+        .centercont {
+            font-size: 0.7em;
+        }
+    }
+
+    #welcome {
+        position: relative;
+        width: 100%;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .welcome_text {
+        font-size: 1.5em;
+        color: #a46534;
+        font-weight: bold;
+        padding: 0 20px;
+    }
+
+    .welcome_centerblock {
+        width: 1000px;
+        margin: 50px auto;
+        position: relative;
+    }
+
+    .border_img {
+        width: 350px;
+        height: 350px;
+        border: 5px solid #a46534;
+        position: absolute;
+        top: 0;
+        left: 60px;
+        z-index: 0;
+    }
+
+    .welcmimg {
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        width: 420px;
+        height: 360px;
+        z-index: 1;
+    }
+
+    .welcmimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome_describe_text {
+        position: relative;
+        bottom: 100px;
+        display: inline-block;
+        width: 360px;
+        text-align: left;
+        margin-left: 20px;
+        color: #333333;
+    }
+
+    @media (max-width: 880px) {
+        .welcome_text span {
+            display: none;
+        }
+    }
+
+  
+
+    #panel_arrows {
+        width: 30px;
+        height: 10px;
+        position: absolute;
+        bottom: -30px;
+        left: 150px;
+    }
+
+    @media (max-width: 1000px) {
+        .welcome_centerblock {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .welcome_describe_text {
+            top: 0px;
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .welcome_centerblock {
+            width: 95%;
+        }
+
+        #panel_arrows {
+            left: 15%;
+        }
+
+        .welcmimg {
+            width: 350px;
+            height: 320px;
+        }
+
+        .border_img {
+            left: 0px;
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .welcmimg {
+            width: 300px;
+            height: 240px;
+        }
+
+        .border_img {
+            width: 250px;
+            height: 250px;
+        }
+
+        .welcome_describe_text {
+            width: 85%;
+        }
+    }
+
+    @media (max-width: 319px) {
+        .welcmimg {
+            width: 200px;
+            height: 140px;
+        }
+
+        .border_img {
+            display: none;
+        }
+    }
+
+    #services {
+        position: relative;
+        width: 100%;
+        padding: 100px 0;
+        text-align: center;
+        background-color: #f2f2f2;
+    }
+
+    .services_text {
+        font-size: 1.5em;
+        color: #a46534;
+        font-weight: bold;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 880px) {
+        .services_text span {
+            display: none;
+        }
+    }
+
+    .services_slick {
+        position: relative;
+        margin: 50px auto;
+        width: 95%;
+        user-select: text;
+        outline: none;
+    }
+
+    .wrapper_services {
+        position: relative;
+        width: 380px;
+        height: 450px;
+        margin: 30px;
+        box-shadow: 2px 2px 30px #acacac;
+        text-align: center;
+        outline: none;
+    }
+
+    @media (max-width: 450px) {
+        .wrapper_services {
+            width: 300px;
+            height: 380px;
+            margin: 10px;
+        }
+    }
+
+    .wrapper_services img {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .services_img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .ser_name {
+        color: #a46534;
+    }
+
+    .ser_change {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 58%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .inwr {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #another_arr {
+        position: relative;
+        left: 50%;
+        top: 0px;
+        transform: translate(-50%, 0);
+        width: 50px;
+        height: 10px;
+    }
+
+    #bonus {
+        position: relative;
+        width: 100%;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .bonus_text {
+        color: #a46534;
+        font-size: 1.5em;
+        padding: 0 20px;
+        font-weight: bold;
+    }
+
+    .bonus_center {
+        width: 1200px;
+        margin: 50px auto;
+    }
+
+    @media (max-width: 1200px) {
+        .bonus_center {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 880px) {
+        .bonus_text span {
+            display: none;
+        }
+    }
+
+    .bonus_in {
+        width: 300px;
+        height: 200px;
+        display: inline-block;
+        margin: 10px;
+        position: relative;
+    }
+
+    @media (max-width: 361px) {
+        .bonus_in {
+            width: 90%;
+        }
+
+    }
+
+    .bonus_in img {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .bonusin_txt {
+        position: absolute;
+        top: 150px;
+        width: 100%;
+    }
+
+    #promotions {
+        position: relative;
+        width: 100%;
+        color: #fff;
+    }
+
+    #promotions .slick-dotted.slick-slider {
+        background-color: #f2f2f2;
+    }
+
+    .slick-slide {
+        outline: none;
+    }
+
+    .prom_center {
+        width: 100%;
+        background-color: #acacac;
+        outline: none;
+        text-align: center;
+    }
+
+    #promotions .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+
+    .prom_center .slick-dots {
+        bottom: 50px;
+    }
+
+    .first_prom, .second_prom, .third_prom {
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+        padding-bottom: 150px;
+        user-select: text;
+        outline: none;
+    }
+
+    .prom_text {
+        font-size: 2.5em;
+        color: #fff;
+        font-weight: bold;
+        padding: 0 20px;
+    }
+
+    .smltxt {
+        position: relative;
+        left: 10%;
+        width: 80%;
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
+
+    .prom_maintxt {
+        width: 80%;
+        position: relative;
+        left: 10%;
+        margin-top: 100px;
+        font-size: 3em;
+        color: #a46534;
+    }
+
+    .prom_price {
+        position: relative;
+        left: 50%;
+        margin-top: 50px;
+        transform: translate(-50%, 0);
+        width: 190px;
+        height: 50px;
+        background: url(img/price.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-size: 2.5em;
+        padding-top: 10px;
+    }
+
+    .first_prom {
+        background: url(img/prom1.png) no-repeat;
+        background-size: cover;
+    }
+
+    .second_prom {
+        background: url(img/prom2.png) no-repeat;
+        background-size: cover;
+    }
+
+    .third_prom {
+        background: url(img/prom3.png) no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: 880px) {
+        .prom_maintxt {
+            width: 90%;
+            left: 5%;
+            font-size: 2em;
+        }
+
+        .prom_text span {
+            display: none;
+        }
+    }
+
+    @media (max-width: 319px) {
+        .prom_maintxt {
+            width: 100%;
+            left: 0%;
+        }
+    }
+
+    #workers {
+        width: 100%;
+        position: relative;
+        background-color: #f2f2f2;
+        color:#fff;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .workers_text {
+        font-size: 2em;
+        padding: 0 20px;
+        color: #a46534;
+    }
+
+    .workers_blin {
+        width: 95%;
+        margin: 50px auto;
+    }
+
+    .master {
+        position: relative;
+        width: 250px;
+        height: 500px;
+        margin: 30px;
+        display: inline-block;
+    }
+
+    .master .button_bord {
+        margin-top: 30px;
+    }
+
+    @media (max-width: 319px) {
+        .master {
+            width: 200px;
+            margin: auto;
+        }
+        .master_backname {
+            display: none;        }
+        .mastername {
+            display: none;
+        }
+    }
+
+    @media (max-width: 880px) {
+        .workers_text span {
+            display: none;
+        }
+    }
+
+    .master_img {
+        width: 100%;
+    }
+
+    .master_backname {
+        position: absolute;
+        background-color: #a46534;
+        opacity: 0.5;
+        width: 100%;
+        height: 50px;
+        bottom: 125px;
+    }
+
+    .mastername {
+        width: 100%;
+        position: absolute;
+        bottom: 140px;
+    }
+
+    #portfolio {
+        width: 100%;
+        position: relative;
+        padding: 100px 0;
+        text-align: center;
+        color: #a46534;
+    }
+
+    .portfolio_text {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+
+    .portfolio_blin {
+        width: 1000px;
+        margin: auto;
+        margin-top: 70px;
+        display: flex;
+        position: relative;
+    }
+
+    @media (max-width: 1020px) {
+        .portfolio_blin {
+            width: 90%;
+        }
+    }
+
+    .port_img {
+        display: inline-flex;
+        margin: 5px;
+        position: relative;
+    }
+
+    #port_zoom_img {
+        height: 100%;
+        z-index: 900;
+    }
+
+    .port_zoom_img_wr {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: 90%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 980;
+    }
+
+    #wrapp_dark {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.7;
+        z-index: 950;
+        display: none;
+    }
+
+    .close_btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        z-index: 999;
+        cursor: pointer;
+
+    }
+
+    @media (orientation: landscape) {
+        .port_zoom_img_wr {
+            height: 90%;
+            width: auto;
+        }
+    }
+
+    .port_img_wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 1;
+        display: none;
+        opacity: 0.5;
+        outline: none;
+    }
+
+    .port_img .loupe {
+        position: absolute;
+        display: none;
+        width: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .little_img {
+        width: 100%;
+    }
+
+    .big_img {
+        width: 100%;
+    }
+
+    .square_img {
+        width: 100%;
+    }
+
+    .aver_img {
+        width: 100%;
+    }
+
+    .photoport {
+        width: 100%;
+    }
+
+    .leftcol, .rightcol, .centercol {
+        margin: 5px;
+    }
+
+    .port-slider {
+        display: none;
+    }
+
+    #port_arr {
+        display: none;
+        position: absolute;
+        bottom: 10px;
+        width: 50px;
+        height: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    @media (max-width: 880px) {
+        .portfolio_text span {
+            display: none;
+        }
+        .port-slider {
+            margin: 50px auto;
+            width: 90%;
+            display: block;
+        }
+        .leftcol, .rightcol, .centercol {
+            display: none;
+        }
+
+        .little_img, .aver_img {
+            position: relative;
+            top: 70px;
+        }
+
+        .square_img {
+            position: relative;
+            top: 20px;
+        }
+
+        #port_arr {
+            display: block;
+        }
+    }
+
+    #reviews {
+        position: relative;
+        width: 100%;
+        padding: 100px 0;
+        background-color: #f2f2f2;
+        color: #a46534;
+        text-align: center;
+    }
+
+    .reviews_text {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+
+    .rev_blin {
+        position: relative;
+        width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .rev_in {
+        position: relative;
+        display: inline-block;
+        width: 350px;
+        padding-top: 50px;
+        margin: 20px;
+    }
+
+    .rev_in img {
+        width: 90%;
+        float: right;
+        z-index: 1;
+        position: relative;
+    }
+
+    .border_rev {
+        position: absolute;
+        width: 70%;
+        top: 0;
+        height: 80%;
+        z-index: 0;
+        border: 4px solid #a46534;
+    }
+
+    @media (max-width: 1220px) {
+        .rev_blin {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 880px) {
+        .reviews_text span {
+            display: none;
+        }
+
+        .rev_in {
+            width: 90%;
+            margin: 20px auto;
+        }
+    }
+
+    #contacts {
+        position: relative;
+        width: 100%;
+        color: #fff;
+        padding: 100px 0;
+        background: url(img/prom2.png) no-repeat;
+        background-size: cover;
+    }
+
+    .contacts_blin {
+        position: relative;
+        width: 1100px;
+        margin: auto;
+    }
+
+    .cont_txt {
+        color: #a46534;
+        font-size: 2em;
+        margin-bottom: 70px;
+    }
+
+    .txtm {
+        margin: 15px 0;
+        font-size: 1.3em;
+        font-weight: bolder;
+        color: #a46534;
+    }
+
+    ._txt {
+        margin: 5px 0;
+    }
+
+    .contb {
+        left: 0;
+        transform: translate(0, 0);
+        margin-top: 30px;
+    }
+
+    .leftcon {
+        position: relative;
+        display: inline-block;
+        width: 54%;
+    }
+
+    .rightcon {
+        position: relative;
+        display: inline-block;
+        width: 45%;
+        top: 35px;
+    }
+    .subcon {
+        font-size: 2em;
+    }
+
+    .subcon span {
+        color: #a46534;
+        border-bottom: 2px solid #a46534;
+    }
+
+    .contimg {
+        margin-top: 50px;
+        width: 60%;
+    }
+
+    @media (max-width: 1120px) {
+        .contacts_blin {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 560px) {
+        .leftcon, .rightcon {
+            width: 90%;
+            left: 5%;
+        }
+
+        
+    }
+
+    @media (max-width: 880px) {
+        .cont_txt span {
+            display: none;
+        }
+    }
+
+    @media (max-width: 300px) {
+        .subcon {
+            font-size: 1.5em;
+        }
+
+        .leftcon .button_bord {
+            width: 200px;
+            height: 100px;
+            font-size: 0.8em;
+        }
+    }
+
+    #map {
+        position: relative;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        padding: 25px 0px;
+        display: flex;
+    }
+
+    .polc {
+        border-bottom: 2px solid #fff;
+    }
+
+
+
+    .fottxt {
+        margin: 0 50px;
+    }
+
+    .contf {
+        position: absolute;
+        right: 50px;
+    }
+    
+    @media (max-width: 1024px) {
+        .contf .adr {
+            display: none;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .contf .tel {
+            display: none;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .polc {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        .fottxt {
+            position: relative;
+            margin: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+
+    #sign_up {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 1000px;
+        z-index: 999;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    .sign_wr {
+        position: relative;
+        padding: 100px 0;
+        padding-bottom: 50px;
+        background-color: #a46534;
+        color: #fff;
+        text-align: center;    
+    }
+
+    .header_p {
+        font-size: 2.5em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .input_sign {
+        display: inline-block;
+        font-size: 1.5em;
+        width: 200px;
+        margin: 50px;
+        text-align: left;
+    }
+
+    .sign_in {
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 1.1em;
+        border-bottom: 2px solid #cccccc;
+        width: 100%;
+    }
+
+    .sign_last {
+        font-size: 1.1em;
+        color: #fff;
+        background: none;
+        border: 2px solid #cccccc;
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    @media(max-width: 1020px) {
+        #sign_up {
+            width: 90%;
+        }
+
+        .sign_wr {
+            padding: 20px 0;
+        }
+
+        .input_sign {
+            margin: 10px
+        }
+    }
+
+    @media(max-width: 300px) {
+        .sign_wr {
+            font-size: 0.9em;
+            padding: 0
+        }
+
+        .sign_wr .close_btn {
+            width: 20px;
+        }
+
+        .header_p {
+            font-size: 1em;
+        }
+
+        .input_sign {
+            text-align: left;
+            margin: 5px;
+            width: 150px;
+            font-size: 1em;
+        }
+    }
+
+
+</style>
+<body>
+    <div id="sign_up">
+        <div class="sign_wr">
+            <img src="img/closebtn.png" class="close_btn" alt="cl">
+            <div class="header_p">
+                Запишитесь прямо сейчас!
+            </div>
+            <div class="input_sign">
+                <div class="nm">Введите имя:</div>
+                <input class="sign_in" type="text">
+            </div>
+            <div class="input_sign">
+                <div class="tel">Введите номер:</div>
+                <input class="sign_in" type="tel">
+            </div>
+            <div class="input_sign">
+                <div class="data-time">
+                    Выберите дату:
+                </div>
+                <input class="sign_in" type="month">
+            </div>
+            <button class="sign_last">Записаться</button>
+        </div>
+    </div>
+    <header>
+        <div class="topblock">
+            <div id="menu">
+                <img src="img/logo.png" alt="logo" id="logo">
+            </div>
+            <div class="tel">
+                <i class="fas fa-phone" style="color: #a46534;"></i>
+                +7(987)332-14-21
+           </div>
+            <div class="adr">
+                <i class="fas fa-map-marker-alt" style="color: #a46534;"></i>
+                <div>
+                    Казань, Пр. Победы 30/1 <br>
+                    Ежедневно с 10 до 20     
+                </div>
+            </div>
+        </div>
+        <div class="centercont">
+            <div class="strman">
+                СТРИЖМ
+                <img src="img/scissors.png" class="scissors" alt="scissors">
+                Н
+                <hr class="lined">
+                <p>МУЖСКИЕ СТРИЖКИ</p>
+            </div>
+            <div class="sectxt">
+                СТРИЖЕМ И БРЕЕМ
+            </div>
+            <div class="button_bord">
+                <div class="leftb ord"></div>
+                <div class="bottomb ord"></div>
+                <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                <div class="rightb ord"></div>
+                <div class="topb ord"></div>
+            </div>
+        </div>
+    </header>
+    <section id="welcome">
+        <p class="welcome_text">
+            <span>——</span> ДОБРО ПОЖАЛОВАТЬ В СТРИЖМАН <span>——</span>
+        </p>
+        <div class="welcome_centerblock">
+            <div id="panel_arrows"></div>
+
+            <div class="border_img"></div>
+            <div class="welcmimg">
+                <div>
+                    <img src="img/welcomeimg.png" alt="barber shop">
+                </div>
+                <div>
+                    <img src="img/welcomeimg.png" alt="barber shop">
+                </div>
+            </div>
+            <div class="welcome_describe_text">
+                <p>
+                    <strong>СТРИЖМАН</strong> — намного больше чем просто мужская парикмахерская, это даже больше, 
+                    чем мужской клуб по интересам, это именно то место, где ты найдешь себя и свой 
+                    стиль. Поверь нам на слово. Мужские стрижки и опасное бритье — это именно наш 
+                    профиль, и мы уверенны, что мы стрижем и бреем лучше всех остальных. Даже не 
+                    обсуждается.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <p class="services_text">
+            <span>——</span> НАШИ УСЛУГИ <span>——</span>
+        </p>
+        <div class="services_slick">
+            <div class="wrapper_services">
+                <div class="inwr">
+                    <img src="img/paint-brush.png" alt="razor">
+                    <h3 class="ser_name">МУЖСКАЯ СТРИЖКА</h2>
+                    <p class="ser_change">
+                        Консультация, стрижка ножницами и машинкой, укладка
+                    </p>
+                    <h3 class="ser_name">500 руб.</h3>
+                </div>
+                <img src="img/ser1.jpg" class="services_img" alt="service">
+                
+            </div>
+            <div class="wrapper_services">
+                <div class="inwr">
+                    <img src="img/razor.png" alt="razor">
+                    <h3 class="ser_name">КОРОЛЕВСКОЕ БРИТЬЕ</h2>
+                    <p class="ser_change">
+                        Намного больше, чем просто мужская парикмахерская, это
+                        даже больше, чем мужской клуб по интересам, намного больше, 
+                        чем просто парикмахерская 
+                    </p>
+                    <h3 class="ser_name">600 руб.</h3>
+                </div>
+                <img src="img/ser2.jpg" class="services_img" alt="service">
+            </div>
+            <div class="wrapper_services">
+                <div class="inwr">
+                    <img src="img/application.png" alt="razor">
+                    <h3 class="ser_name">ОФОРМЛЕНИЕ БОРОДЫ</h2>
+                    <p class="ser_change">
+                        здесь нужен текст, чтобы что-то было информативное
+                    </p>
+                    <h3 class="ser_name">500 руб.</h3>
+                </div>
+                <img src="img/ser1.jpg" class="services_img" alt="service">
+            </div>
+            <div class="wrapper_services">
+                <div class="inwr">
+                    <img src="img/razor.png" alt="razor">
+                    <h3 class="ser_name">ОФОРМЛЕНИЕ БОРОДЫ</h2>
+                    <p class="ser_change">
+                        Намного больше, чем просто мужская парикмахерская, это
+                        даже больше, чем мужской клуб по интересам, намного больше, 
+                        чем просто парикмахерская 
+                    </p>
+                    <h3 class="ser_name">500 руб.</h3>
+                </div>
+                <img src="img/ser2.jpg" class="services_img" alt="service">
+            </div>
+            <div class="wrapper_services">
+                <div class="inwr">
+                    <img src="img/scissors (1).png" alt="razor">
+                    <h3 class="ser_name">ОФОРМЛЕНИЕ БОРОДЫ</h2>
+                    <p class="ser_change">
+                        Намного больше, чем просто мужская парикмахерская, это
+                        даже больше, чем мужской клуб по интересам, намного больше, 
+                        чем просто парикмахерская 
+                    </p>
+                    <h3 class="ser_name">500 руб.</h3>
+                </div>
+                <img src="img/ser1.jpg" class="services_img" alt="service">
+            </div>
+            <div class="wrapper_services">
+                <div class="inwr">
+                    <img src="img/application.png" alt="razor">
+                    <h3 class="ser_name">ОФОРМЛЕНИЕ БОРОДЫ</h2>
+                    <p class="ser_change">
+                        Нужен какой-то текст для красоты и полноты
+                    </p>
+                    <h3 class="ser_name">500 руб.</h3>
+                </div>
+                <img src="img/ser2.jpg" class="services_img" alt="service">
+            </div>
+        </div>
+        <div id="another_arr"></div>
+        <div class="button_bord">
+            <div class="leftb ord"></div>
+            <div class="bottomb ord"></div>
+            <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+            <div class="rightb ord"></div>
+            <div class="topb ord"></div>
+        </div>
+    </section>
+    <section id="bonus">
+        <p class="bonus_text">
+            <span>——</span> ПРИЯТНЫЕ БОНУСЫ <span>——</span>
+        </p>
+        <div class="bonus_center">
+            <div class="bonus_in">
+                <img src="img/b1.png" alt="bonus">
+                <p class="bonusin_txt">
+                    БЕЗНАЛИЧНЫЙ РАСЧЁТ
+                </p>
+            </div>
+            <div class="bonus_in">
+                <img src="img/b2.png" alt="bonus">
+                <p class="bonusin_txt">
+                    ТРАНСЛЯЦИЯ ГЛАВНЫХ СПОРТИВНЫХ СОБЫТИЙ
+                </p>
+            </div>
+            <div class="bonus_in">
+                <img src="img/b3.png" alt="bonus">
+                <p class="bonusin_txt">
+                    ПРОФЕССИОНАЛЬНАЯ МУЖСКАЯ КОСМЕТИКА
+                </p>
+            </div>
+            <div class="bonus_in">
+                <img src="img/b4.png" alt="bonus">
+                <p class="bonusin_txt">
+                    ИГРОВАЯ ПРИСТАВКА
+                </p>
+            </div>
+            <div class="bonus_in">
+                <img src="img/b5.png" alt="bonus">
+                <p class="bonusin_txt">
+                    ПРОГРАММА ЛОЯЛЬНОСТИ ДЛЯ ПОСТОЯННЫХ КЛИЕНТОВ
+                </p>
+            </div>
+            <div class="bonus_in">
+                <img src="img/b6.png" alt="bonus">
+                <p class="bonusin_txt">
+                    БЕСПЛАТНЫЙ ЧАЙ/КОФЕ
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="promotions">
+        <div class="prom_center">
+            <div class="first_prom">
+                <p class="prom_text">
+                    <span>——</span> АКЦИИ <span>——</span>
+                    <p class="smltxt">ЗАПИШИТЕСЬ ОНЛАЙН И ВОСПОЛЬЗУЙТЕСЬ СКИДКАМИ</p>
+                </p>
+                <div class="prom_maintxt">СТРИЖКА + ОФОРМЛЕНИЕ БОРОДЫ</div>
+                <div class="prom_price">1000 р</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+            <div class="second_prom">
+                <p class="prom_text">
+                    <span>——</span> АКЦИИ <span>——</span>
+                    <p class="smltxt">ЗАПИШИТЕСЬ ОНЛАЙН И ВОСПОЛЬЗУЙТЕСЬ СКИДКАМИ</p>
+                </p>
+                <div class="prom_maintxt">КОРОЛЕВСКОЕ БРИТЬЕ</div>
+                <div class="prom_price">1000 р</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+            <div class="third_prom">
+                <p class="prom_text">
+                    <span>——</span> АКЦИИ <span>——</span>
+                    <p class="smltxt">ЗАПИШИТЕСЬ ОНЛАЙН И ВОСПОЛЬЗУЙТЕСЬ СКИДКАМИ</p>
+                </p>
+                <div class="prom_maintxt">ЕЩЕ ЧТО-ТО ПО СТРИЖКЕ ИЛИ БОРОДЕ</div>
+                <div class="prom_price">1000 р</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="workers">
+        <p class="workers_text">
+            <span>——</span> МАСТЕРА <span>——</span>
+        </p>
+        <div class="workers_blin">
+            <div class="master_details">
+                <div class="rightblock_master">
+                    <p id="name_master"></p>
+                    <p id="expirience_master"></p>
+                </div>
+            </div>
+            <div class="master">
+                <img class="master_img" src="img/master.jpg" alt="master">
+                <div class="master_backname"></div>
+                <div class="mastername">ИЛЬЯ ЗАРИПОВ</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+            <div class="master">
+                <img class="master_img" src="img/master.jpg" alt="master">
+                <div class="master_backname"></div>
+                <div class="mastername">ВЕРОНИКА МАСКОВА</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+            <div class="master">
+                <img class="master_img" src="img/master.jpg" alt="master">
+                <div class="master_backname"></div>
+                <div class="mastername">МАТВЕЙ УСАЧ</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+            <div class="master">
+                <img class="master_img" src="img/master.jpg" alt="master">
+                <div class="master_backname"></div>
+                <div class="mastername">АНДРЕЙ ПОСТРИГУН</div>
+                <div class="button_bord">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <p class="portfolio_text">
+            <span>——</span> НАШИ РАБОТЫ <span>——</span>
+        </p>
+        <div id="wrapp_dark"></div>
+        <div class="portfolio_blin">   
+            <div id="port_arr"></div>
+            <div class="port_zoom_img_wr">
+                <img id="port_zoom_img" src="img/port3.png" alt="img">
+                <img src="img/closebtn.png" alt="cl" class="close_btn" onclick="closeZoom();">
+            </div>
+            <div class="leftcol">
+                <div class="little_img port_img" onmouseover="loupeGo(0);" onmouseleave="loupeStop(0);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(0);" class="loupe"><img class="photoport" src="img/port1.png" alt="work"></div>
+                <div class="little_img port_img" onmouseover="loupeGo(1);" onmouseleave="loupeStop(1);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(1);" class="loupe"><img class="photoport" src="img/port1.png" alt="work"></div>
+                <div class="big_img port_img" onmouseover="loupeGo(2);" onmouseleave="loupeStop(2);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(2);" class="loupe"><img class="photoport" src="img/port2.png" alt="work"></div>    
+            </div>
+            <div class="centercol">
+                <div class="square_img port_img" onmouseover="loupeGo(3);" onmouseleave="loupeStop(3);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(3);" class="loupe"><img class="photoport" src="img/port4.png" alt="work"></div>     
+                <div class="aver_img port_img" onmouseover="loupeGo(4);" onmouseleave="loupeStop(4);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(4);" class="loupe"><img class="photoport" src="img/port3.png" alt="work"></div>   
+                <div class="aver_img port_img" onmouseover="loupeGo(5);" onmouseleave="loupeStop(5);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(5);" class="loupe"><img class="photoport" src="img/port3.png" alt="work"></div>         
+            </div>
+            <div class="rightcol">
+                <div class="big_img port_img" onmouseover="loupeGo(6);" onmouseleave="loupeStop(6);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(6);" class="loupe"><img class="photoport" src="img/port2.png" alt="work"></div>    
+                <div class="little_img port_img" onmouseover="loupeGo(7);" onmouseleave="loupeStop(7);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(7);" class="loupe"><img class="photoport" src="img/port1.png" alt="work"></div>
+                <div class="little_img port_img" onmouseover="loupeGo(8);" onmouseleave="loupeStop(8);"><div class="port_img_wrap"></div><img src="img/loupe.png" alt="loupe" onclick="loopImg(8);" class="loupe"><img class="photoport" src="img/port1.png" alt="work"></div>
+            </div>
+            <div class="port-slider">
+                <div>
+                    <div class="little_img port_img"><img class="photoport" src="img/port1.png" alt="work"></div>
+                </div>
+                <div>
+                    <div class="little_img port_img"><img class="photoport" src="img/port1.png" alt="work"></div>
+                </div>
+                <div>
+                    <div class="big_img port_img"><img class="photoport" src="img/port2.png" alt="work"></div>    
+                </div>
+                <div>
+                    <div class="square_img port_img"><img class="photoport" src="img/port4.png" alt="work"></div>     
+                </div>
+                <div>
+                    <div class="aver_img port_img" ><img class="photoport" src="img/port3.png" alt="work"></div>   
+                </div>
+                <div>
+                    <div class="aver_img port_img"><img class="photoport" src="img/port3.png" alt="work"></div>   
+                </div>
+                <div>
+                    <div class="big_img port_img"><img class="photoport" src="img/port2.png" alt="work"></div>    
+                </div>
+                <div>
+                    <div class="little_img port_img"><img class="photoport" src="img/port1.png" alt="work"></div>
+                </div>
+                <div>
+                    <div class="little_img port_img"><img class="photoport" src="img/port1.png" alt="work"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <p class="reviews_text">
+            <span>——</span> ОТЗЫВЫ КЛИЕНТОВ <span>——</span>
+        </p>
+        <div class="rev_blin">
+            <div class="rev_in">
+                <div class="border_rev"></div>
+                <img src="img/rev1.png" alt="rev">
+            </div>
+            <div class="rev_in">
+                <div class="border_rev"></div>
+                <img src="img/rev2.png" alt="rev">
+            </div>
+            <div class="rev_in">
+                <div class="border_rev"></div>
+                <img src="img/rev1.png" alt="rev">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contacts_blin">
+            <div class="leftcon">
+                <div class="cont_txt">НАШИ КОНТАКТЫ <span>——</span></div>
+                <p class="txtm">АДРЕС:</p>
+                <p class="_txt">Проспект победы 30/1</p>
+                <p class="txtm">ТЕЛЕФОН:</p>
+                <p class="_txt">+7(987)277-15-90</p>
+                <p class="txtm">ЭЛ. АДРЕС:</p>
+                <p class="_txt">barb@go.ru</p>
+                <a href="#" class="txtm"><i class="fab fa-vk"></i></a>
+                <a href="#" class="txtm" style="margin-left: 5px;"><i class="fab fa-instagram"></i></a>
+                <div class="button_bord contb">
+                    <div class="leftb ord"></div>
+                    <div class="bottomb ord"></div>
+                    <button class="btn">ЗАПИСАТЬСЯ ОНЛАЙН</button>     
+                    <div class="rightb ord"></div>
+                    <div class="topb ord"></div>
+                </div>
+            </div>
+            <div class="rightcon">
+                <p class="subcon">
+                    <span>ПОДПИШИТЕСЬ</span> НА НАШ ИНСТАГРАМ И ПОЛУЧИТЕ <span>СКИДКУ</span>
+                </p>
+                <img src="img/cont.png" class="contimg" alt="cont">
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8671840.459242716!2d15.079554400630439!3d53.44309712395206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbarber!5e0!3m2!1sru!2sua!4v1582584133333!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
+
+    <footer>
+        <div class="fottxt">
+            © 2018 Все права защищены.
+        </div>
+        <a class="polc" href="#">Политика конфиденциальности</a>
+        <div class="contf">
+            <div class="tel">
+                <i class="fas fa-phone" style="color: #a46534;"></i>
+                +7(987)332-14-21
+           </div>
+            <div class="adr">
+                <i class="fas fa-map-marker-alt" style="color: #a46534;"></i>
+                <div>
+                    Казань, Пр. Победы 30/1
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+
+        var btn = document.getElementsByClassName('btn');
+        var btn_cl = document.getElementsByClassName('close_btn');
+        for(var j = 0; j < btn_cl.length; j++)
+            btn_cl[j].onclick = function() {
+                document.getElementsByClassName('port_zoom_img_wr')[0].style.display = 'none';
+                document.getElementById('wrapp_dark').style.display = 'none';
+                document.body.style.overflow = 'visible';
+                document.getElementById('sign_up').style.display = 'none';
+            };
+        for(var i = 0; i < btn.length; i++)
+            btn[i].onclick = function() {
+                document.getElementById('sign_up').style.display = 'block';
+            };
+       
+        function loopImg(num) {
+            document.getElementById('port_zoom_img').src= document.getElementsByClassName('photoport')[num].src;
+            document.getElementsByClassName('port_zoom_img_wr')[0].style.display = 'block';
+            document.getElementById('wrapp_dark').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function loupeGo(k) {
+            document.getElementsByClassName('loupe')[k].style.display = 'block';
+            document.getElementsByClassName('port_img_wrap')[k].style.display = 'block';
+        }
+
+        function loupeStop(k) {
+            document.getElementsByClassName('loupe')[k].style.display = 'none';
+            document.getElementsByClassName('port_img_wrap')[k].style.display = 'none';
+        }
+    </script>
+    <script>
+        $('.welcmimg').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            appendArrows: $('#panel_arrows'),
+            cssEase: 'linear'
+        });
+    </script>
+
+    <script>
+        $('.services_slick').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            variableWidth: true,
+            appendArrows: $('#another_arr'), 
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+        });
+
+        $('.prom_center').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            arrows: false,
+            draggable: false,
+            autoplay: true, 
+            cssEase: 'linear'
+        });
+        
+        $('.port-slider').slick({
+            dots: false,
+            infinite: true,
+            appendArrows: $('#port_arr'), 
+            fade: true,
+            draggable: false,
+            autoplay: true, 
+            cssEase: 'linear'
+        });
+    </script>
+</body>
+</html>

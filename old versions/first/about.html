@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+	<title>About</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+<style>
+  #wrapper {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 90%;
+    width: 100%;
+    visibility:hidden;
+    opacity:0;
+    transition:all 0.5s ease;
+  }
+
+  #button-scroll {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    font-size: 1em;
+    animation: run 20s infinite ease-in-out;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @keyframes run {
+    0% {
+      font-size: 1.2em;
+    }
+    25% {
+      font-size: 0.7em;
+    }
+    50% {
+      font-size: 1.2em;
+    }
+    75% {
+      font-size: 0.7em;
+    }
+    100% {
+      font-size: 1.2em;
+    }
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 100%;
+    /*border: 1px solid red;*/
+  }
+
+  #blin {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid green;*/
+    display: inline-flex;
+  }
+
+
+  #abouttext {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 1.3em;
+    height: 390px;
+    width: 400px;
+  }
+
+  #abouttextright {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 1.3em;
+    transform: translate(0, -50%);
+    height: 380px;
+    width: 407px;
+  }
+
+  #abouttext>.element4>strong {
+    color: #636363;
+    font-size: 2em;
+  }
+
+  #abouttextright>.element5>strong {
+    color: #086AE4;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #abouttextright>.element6>strong {
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #abouttext>.element7>strong {
+    color: #07E6BF;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  #fslph {
+    position: absolute;
+    right: 0;
+    height: 500px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #fslph1 {
+    height: 100%;
+  }
+
+  #whoimg {
+    position: absolute;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+  }
+
+  #whoimg1 {
+    height: 100%;
+  }
+
+  @media(max-width: 1024px) {
+    .swiper-container {
+      width: 80%;
+    }
+
+    #abouttext {
+      font-size: 1em;
+      height: 290px;
+      width: 315px;
+    }
+
+    #abouttextright {
+      font-size: 1em;
+      transform: translate(0, -50%);
+      height: 280px;
+      width: 315px;
+    }
+
+    #fslph, #whoimg {
+      height: 350px;
+    }
+  }
+
+  @media(max-width: 800px) {
+
+    #abouttext {
+      font-size: 0.7em;
+      height: 210px;
+      width: 215px;
+    }
+
+    #abouttextright {
+      font-size: 0.7em;
+      height: 200px;
+      width: 220px;
+    }
+
+    #fslph, #whoimg {
+      height: 250px;
+    }
+  }
+
+  @media(max-height: 400px) {
+    .swiper-container {
+      width: 500px;/*80%*/
+    }
+
+    #abouttext {
+      font-size: 0.7em;
+      height: 210px;
+      width: 215px;
+    }
+
+    #abouttextright {
+      font-size: 0.7em;
+      height: 200px;
+      width: 220px;
+    }
+
+    #fslph, #whoimg {
+      height: 250px;
+    }
+  }
+
+  @media(max-width: 550px) {
+    .swiper-container {
+      width: 70%;
+    }
+
+    #abouttext {
+      font-size: 0.45em;
+      height: 130px;
+      width: 145px;
+    }
+
+    #abouttextright {
+      font-size: 0.45em;
+      height: 120px;
+      width: 150px;
+    }
+
+    #fslph, #whoimg {
+      height: 150px;
+    }
+  }
+
+  @media(max-width: 370px) {
+    #abouttext {
+      font-size: 1.5vw;
+      height: 29vw;
+      width: 30vw;
+    }
+
+    #abouttextright {
+      font-size: 1.5vw;
+      height: 27vw;
+      width: 30vw;
+    }
+
+    #fslph, #whoimg {
+      height: 80px;
+    }
+  }
+
+  @media(max-height: 170px) {
+    #abouttext {
+      font-size: 1.5vw;
+      height: 29vw;
+      width: 30vw;
+    }
+
+    #abouttextright {
+      font-size: 1.5vw;
+      height: 27vw;
+      width: 30vw;
+    }
+
+    #fslph, #whoimg {
+      height: 70vh;
+    }
+  }
+
+  @media(max-width: 550px) and (min-height: 500px) {
+    .swiper-container {
+      width: 85%;
+    }
+
+    #abouttext {
+      font-size: 1em;
+      height: 18em;
+      width: 100%;
+    }
+
+    #abouttextright {
+      font-size: 1em;
+      height: 17em;
+      width: 100%;
+    }
+
+    #fslph, #whoimg {
+      display: none;
+    }
+  }
+
+  @media(max-width: 370px) and (min-height: 300px) {
+    .swiper-container {
+      width: 85%;
+    }
+
+    #abouttext {
+      font-size: 0.8em;
+      height: 18em;
+      width: 100%;
+    }
+
+    #abouttextright {
+      font-size: 0.8em;
+      height: 17em;
+      width: 100%;
+    }
+
+    #fslph, #whoimg {
+      display: none;
+    }
+  }
+
+
+  /*@media(max-width: 730px) and (max-height: 400px) {
+    #abouttext {
+      font-size: 0.5em;
+      height: 290px;
+      width: 315px;
+    }
+
+    #abouttextright {
+      font-size: 1em;
+      transform: translate(0, -50%);
+      height: 280px;
+      width: 315px;
+    }
+
+    #fslph, #whoimg {
+      height: 350px;
+    }
+
+  }*/
+
+  /*@media(max-width: 1024px) {
+    .swiper-container {
+      width: 90%;
+    }
+  }
+
+  @media(max-width: 900px) {
+    #abouttext, #abouttextright {
+      font-size: 1em;
+    }
+
+    #abouttext {
+      height: 300px;
+      width: 315px;
+    }
+
+    #abouttextright {
+      height: 300px;
+      width: 320px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    #fslph, #whoimg {
+      height: 300px;
+    }
+  }
+
+  @media(max-width: 600px) {
+     .swiper-container {
+      width: 80%;
+    }
+
+    #abouttext, #abouttextright {
+      font-size: 0.7em;
+    }
+
+    #abouttext {
+      height: 200px;
+      width: 215px;
+    }
+
+    #abouttextright {
+      height: 200px;
+      width: 220px;
+    }
+
+    #fslph, #whoimg {
+      height: 250px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  @media(max-height: 600px) {
+    .swiper-container {
+      width: 90%;
+    }
+    #abouttext, #abouttextright {
+      font-size: 1em;
+    }
+
+    #abouttext {
+      height: 300px;
+      width: 315px;
+    }
+
+    #abouttextright {
+      height: 300px;
+      width: 320px;
+    }
+
+    #fslph, #whoimg {
+      height: 300px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  @media(max-height: 400px) {
+
+    .swiper-container {
+      width: 80%;
+    }
+
+    #abouttext, #abouttextright {
+      font-size: 0.7em;
+    }
+
+    #abouttext {
+      height: 200px;
+      width: 215px;
+    }
+
+    #abouttextright {
+      height: 200px;
+      width: 220px;
+    }
+
+    #fslph, #whoimg {
+      height: 250px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }*/
+
+</style>
+<body>
+  <header id="menu">
+    <p><a href="index.html">ILLYA KUPCHENKO</a></p>
+    <ul>
+      <li><a href="work.html">+Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+    <button id="toggle"><span></span></button>
+    <div id="menumob">
+      <div id="menin">
+        <a href="work.html">Projects</a><br><br><br>
+        <a href="about.html">About</a><br><br><br>
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </div>
+
+  </header>
+
+  <div id="socialmedia">
+    <ul>
+      <li><a href="https://www.instagram.com/illuha_kupchenko" target="_blank">instagram</a></li>
+      <li><a href="https://www.facebook.com/illuhakupchenko" target="_blank">facebook</a></li>
+      <li><a href="https://www.linkedin.com/in/illuhakupchenko/" target="_blank">linkedin</a></li>
+      <li><a href="https://github.com/illuhakupchenko" target="_blank">github</a></li>
+    </ul>
+  </div>
+ <div id="button-scroll">
+      <span>scroll down</span>
+    </div>
+
+  <div class="preloader">
+      <div class="preloader_inner">100%</div>
+  </div>
+
+  <div id="wrapper">
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div id="blin">
+            <p id="abouttext">
+              <span class="element4"></span>
+            </p>
+            <div id="fslph"><img src="img/mebl.png" alt="me" id="fslph1"></div>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide">
+          <div id="blin">
+            <div id="whoimg"><img src="img/Education-Download-PNG.png" alt="me" id="whoimg1"></div>
+            <p id="abouttextright">
+              <span class="element6"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="blin">
+            <p id="abouttext">
+              <span class="element7"></span>
+            </p>
+            <div id="fslph"><img src="img/football_PNG52787.png" alt="me" id="fslph1"></div>
+          </div>
+        </div>
+
+         <div class="swiper-slide">
+          <div id="blin">
+            <div id="whoimg"><img src="img/me.png" alt="me" id="whoimg1"></div>
+            <p id="abouttextright">
+              <span class="element5"></span>
+            </p>
+          </div>
+        </div>
+        <!--class "swiper-no-swiping" helps to select elements/or add "simulateTouch: false" in initialization of Swiper-->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <script src="js/mobilemenu.js"></script>
+  <script src="js/typed.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        speed: 2000,
+        effect: 'cube',
+        slidesPerView: 1,
+        spaceBetween: 1000,
+        mousewheel: true,
+        loop: true,
+        simulateTouch: false,
+        /*pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },*/
+
+        navigation: {
+          nextEl: '#button-scroll'
+         }
+    });
+
+    /*if(document.getElementsByClassName('swiper-slide swiper-slide-active')[0].getAttribute('data-swiper-slide-index') == 0) {
+      alert(document.getElementsByClassName('swiper-slide swiper-slide-active')[0].getAttribute('data-swiper-slide-index'));
+
+    }*/
+  </script>
+  <script>
+    loader();
+    function loader(_success) {
+        var obj = document.querySelector('.preloader'),
+        inner = document.querySelector('.preloader_inner'),
+        page = document.querySelector('#wrapper');
+        obj.classList.add('show');
+        page.classList.remove('show');
+        var w = 0,
+            t = setInterval(function() {
+                w = w + 1;
+                inner.textContent = w+'%';
+                if (w === 100){
+                    obj.classList.remove('show');
+                    page.classList.add('show');
+                    clearInterval(t);
+                    w = 0;
+                    if (_success){
+                        return _success();
+                    }
+                }
+            }, 20);
+    }
+  </script>
+
+</body>
+</html>

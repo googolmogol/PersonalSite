@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>Illya Kupchenko</title>
+
+	<link rel="stylesheet" href="css/indexstyle.css">
+
+	<link rel="stylesheet" href="css/fonts/fonts.css">
+
+	<link rel="stylesheet" href="css/wowanimation.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<header class="header" id="header_id">
+		<a href="#">
+			<div class="logo">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					viewbox="0 0 50 50">
+					<path fill-rule="evenodd" 
+					d="M29.069,26.081 L50.984,52.999 L29.659,52.999 L7.955,
+					26.083 L7.939,26.083 L29.663,0.113 L51.001,0.113 L29.069,
+					26.081 ZM-0.000,0.000 L19.185,0.000 L19.185,0.115 L-0.000,
+					22.260 L-0.000,0.000 ZM19.185,53.000 L-0.000,53.000 L-0.000,
+					30.740 L19.185,52.885 L19.185,53.000 Z"/>
+				</svg>
+			</div>
+		</a>
+
+		<nav class="menu">
+			<ul>
+				<li onclick="Scroll('#about_id');">
+					<span style="font-size: 0.9em;  color: rgb(158, 158, 158);">01.</span> About
+				</li>
+				<li onclick="Scroll('#skills_id');">
+					<span style="font-size: 0.9em; color: rgb(158, 158, 158);">02.</span> Skills
+				</li>
+				<li>
+					<span style="font-size: 0.9em; color: rgb(158, 158, 158);">03.</span> Work
+				</li>
+				<li>
+					<span style="font-size: 0.9em; color: rgb(158, 158, 158);">04.</span> Contact
+				</li>
+				<li>
+					<button class="language_btn">EN</button>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="socialmedia">
+		<div id="showScroll"></div>
+		<ul>
+			<li>
+				<a href="https://www.instagram.com/illuha_kupchenko" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://vk.com/illuha_kupchenko" target="_blank">
+					<i class="fab fa-vk"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/illuhakupchenko" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/illuhakupchenko" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://github.com/illuhakupchenko" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="mainpage">
+		
+		<div class="bltext">
+			<div class="leftbltext">
+				<p class="hello">Hi there, my name is</p>
+				<p class="name">Illya Kupchenko</p>
+				<p class="dvlpr">I am a Developer</p>
+			</div>
+			<div class="btn_CV">view CV</div>
+		</div>
+
+		<div class="scrolldown_btn" onclick="Scroll('#about_id');">scroll down to discover</div>
+		
+	</div>
+
+	<div class="aboutpage">
+		<div class="main__container wow fadeInUp" data-wow-duration="2.5s">
+			<h2 class="about__title" id="about_id"><strong style="font-size: 0.8em; color: rgb(158, 158, 158);">01. </strong>About Me</h2>
+
+			<div class="about__flexbox">
+				<div class="about__text">
+					<p class="shortinfo">
+						Full name: Illya Kupchenko <br>
+						Date of Birth: 22 april, 1999 <br>
+						Height: 173 cm <br>
+						Weight: 70 kg <br>
+						Eyes color: brown <br>
+						Hair color: black <br>
+						Status: single <br>
+						Music: rock, rap, hip-hop <br>
+						Movies: action, thriller, comedy <br>
+						Sport: football, volleyball <br>
+						Country: Ukraine <br>
+						City: Kyiv <br>
+						Languages: russian, ukrainian, english, german
+					</p>
+					<div class="about__showmore_btn">read more..</div>
+				</div>
+				<div class="imgblock">
+					<img src="img/Me-on-armchair.png" class="aboutmeimg" alt="me">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="skills_page">
+		<div class="main__container wow flipInX" data-wow-duration="2.5s" data-wow-offset="220">
+			<h2 class="skills__title" id="skills_id"><strong style="font-size: 0.8em; color: rgb(158, 158, 158);">02. </strong>Which technologies I know/use</h2>
+			<p class="skills_text">
+				I've had experience with technologies like this:
+			</p>
+			<div class="skills__flexbox">
+				<div class="tecnhology_in">
+					<p>Java</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>C#</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>.NET</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>C++</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>Python</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>Django</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>JavaScript</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>jQuery</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>HTML/CSS</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>MySQL</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>SQL</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>Unity</p>
+				</div>
+				<div class="tecnhology_in">
+					<p>Kotlin</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var k = true;
+		window.addEventListener('scroll', function() {
+			if(pageYOffset > 0) {
+				document.getElementById('header_id').classList.add("header_fixed");	
+			}
+			if (pageYOffset == 0) {
+				document.getElementById('header_id').classList.remove("header_fixed");		
+			}
+			if(k == true) {
+				Scroll('#about_id');
+				k = false;
+			}
+
+		});
+		
+		
+
+		function Scroll(temp) {
+			k = false
+			var offset = $(temp).offset().top;
+			$('html, body').animate({
+				scrollTop: offset - 100
+			}, 2500);
+		}
+
+		
+	</script>
+
+	<script src="js/wow.min.js"></script>
+
+	<script>
+		new WOW().init();
+	</script>
+	
+</body>
+</html>
